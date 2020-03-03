@@ -1,0 +1,123 @@
+page-planos {
+  .select{
+    position: absolute;
+    right:13px;
+  }
+  .login-content{
+    background: url(../assets/imgs/background-app.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  }
+  .login-card{
+    border-radius: 6px; 
+    margin: 20px 20px 0px 20px;
+    height: 93%;
+    background: #fff;
+  }
+  .login-logo{
+    max-width: 25px;
+    margin: 0 auto;   
+    margin-top: 3%;      
+  }  
+  .toolbar{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    border-bottom: 0px; 
+  }   
+  .toolbar-background{
+    background: #fff;
+    border:0px;
+  }
+  .toolbar{
+    border:0px;
+  } 
+  .titulo{
+    color: #cc9933;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'DINPro-light'; 
+    padding: 0px;
+    position: relative;  
+    margin-top: 20px;
+    margin-bottom: 10px;     
+  } 
+  .fundo{
+    //background: url(../assets/imgs/background.jpg) no-repeat top center;
+    background-size: cover;
+  }
+  .nedo0{
+    width: 100%;
+    background: url(../assets/imgs/plano_1.jpg) no-repeat top center; background-size: cover; 
+    padding: 45px 20px 45px 20px;
+  }
+  .nedo1{
+    width: 100%;    
+    background: url(../assets/imgs/plano_2.jpg) no-repeat top center; background-size: cover; 
+    padding: 45px 20px 45px 20px;
+  }
+  .caixa{
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    padding: 0px;
+    border-bottom: 5px solid #fff;
+  }
+  .titulo-plano{
+    color: #fff;
+    text-align: center;
+    //font-weight: bold;
+    font-size: 200%;
+    font-family: 'DINPro-Bold'; 
+    //text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+  }
+  .subtitulo-plano{
+    color: #fff;
+    text-align: center;
+    font-family: 'DINPro-Light';   
+    font-size: 120%; 
+    padding: 5px 0px 0px 0px;
+    margin: 0px;
+    margin-top: 1%;    
+  }
+  .preco-plano{
+    color: #fff;
+    text-align: center;
+    font-family: 'DINPro-Bold';     
+    padding: 5px 0px 0px 0px;
+    margin: 0px;
+    margin-top: 1%;
+    font-size: 120%;       
+  }
+  .frase_final{
+    color: #858584;
+    text-align: center;
+    font-family: 'DINPro-Light'; 
+    font-size: 120%;    
+    margin-top: 5%;
+    font-weight: bold;    
+  }
+  .bt-fecha-modal{
+    position: absolute;
+    top: -3px;
+    width: 10%;
+    color:#000;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Lato'; 
+    text-transform: uppercase; 
+    background: transparent;
+    border: 0px;
+    border-radius: 0px;
+  }
+  .bt-fecha-modal:hover{
+    color:#000;
+    background: transparent;
+    border: 0px;
+    border-radius: 0px;
+  }  
+  
+}

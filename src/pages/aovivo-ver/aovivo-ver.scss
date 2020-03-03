@@ -1,0 +1,63 @@
+page-aovivo-ver {
+    .fundo{
+        
+    }
+    .card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+    .titulo-card-back{
+        position: absolute;
+        top: 55px;
+        font-size: 25px;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);   
+        font-family: 'DINPro-Bold';      
+    }
+    .subtitulo-card-back{
+        font-size: 18px;
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);    
+        font-family: 'DINPro-light';  
+    }
+    .titulos-card{
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .titulos-card .titulos-card-chamadas{
+        border-bottom: 2px solid #000;
+    }
+    .titulos-card .titulos-card-titulo-chamadas{
+        color:#fff;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'DINPro-Bold';
+    }
+    .titulos-card-titulo{
+        color:#fff;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'DINPro-Bold';
+    }     
+}

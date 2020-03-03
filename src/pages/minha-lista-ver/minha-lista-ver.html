@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="transparente pantera">
+
+    <ion-card class="novidades-card">
+      <ion-item>
+        <h2 class="video-card-categoria">
+          Publicações
+        </h2>       
+      </ion-item>
+      <ion-card-content *ngFor= "let LivrosItens of LivrosItens" (click)="abriLivro(LivrosItens.idlivro)">
+        <ion-item >
+          <ion-avatar item-start>
+            <img src="http://www.redeplaneje.com.br/midias-lider/r/livros/{{ LivrosItens.thumbLivro }}" >
+          </ion-avatar>
+        <h2 class="video-card-categoria">
+            {{ LivrosItens.tituloLivro }}
+          </h2>       
+          <p style="color:#bbbbbb;">
+            {{ LivrosItens.descricaoLivro }}
+          </p>
+        </ion-item>
+
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="novidades-card">
+        <ion-item>
+          <h2 class="video-card-categoria">
+            Matérias
+          </h2>       
+        </ion-item>
+        <ion-card-content *ngFor= "let plItens of plItens" (click)="abriPl(plItens.idpl)">
+          <ion-item >
+            <ion-avatar item-start>
+              <img src="http://www.redeplaneje.com.br/midias-lider/r/pl/{{ plItens.thumbPl }}" >
+            </ion-avatar>
+          <h2 class="video-card-categoria">
+              {{ plItens.tituloPl }}
+            </h2>       
+            <p style="color:#bbbbbb;">
+              {{ plItens.descricaoPl }}
+            </p>
+          </ion-item>
+  
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="novidades-card">
+          <ion-item>
+            <h2 class="video-card-categoria">
+              Vídeos
+            </h2>       
+          </ion-item>
+          <ion-card-content *ngFor= "let VideoItens of VideoItens" (click)="abriVideo(VideoItens)">
+            <ion-item >
+              <ion-avatar item-start>
+                <img src="http://www.redeplaneje.com.br/midias-lider/r/pl/{{ VideoItens.thumbVideo }}" >
+              </ion-avatar>
+            <h2 class="video-card-categoria">
+                {{ VideoItens.tituloVideo }}
+              </h2>       
+              <p style="color:#bbbbbb;">
+                {{ VideoItens.descricaoVideo }}
+              </p>
+            </ion-item>
+    
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card class="novidades-card">
+            <ion-item>
+              <h2 class="video-card-categoria">
+                Áudio
+              </h2>       
+            </ion-item>
+            <ion-card-content *ngFor= "let OntoItens of OntoItens" (click)="abriOnto(OntoItens)">
+              <ion-item >
+                <ion-avatar item-start>
+                  <img src="http://www.redeplaneje.com.br/midias-lider/r/audios/capa.jpg" >
+                </ion-avatar>
+              <h2 class="video-card-categoria">
+                  {{ OntoItens.tituloOntoarte }}
+                </h2>       
+                <p style="color:#bbbbbb;">
+                  {{ OntoItens.descricaoOntoarte }}
+                </p>
+              </ion-item>
+      
+            </ion-card-content>
+          </ion-card>
+
+</ion-content>

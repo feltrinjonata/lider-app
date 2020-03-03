@@ -1,0 +1,24 @@
+<ion-content class="login-content" style="overflow-y:hidden;">
+  <div class="login-card">
+    <ion-navbar>
+      <button ion-button menuToggle start color="secondary">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <div class="titulo">
+          Política de Privacidade<Br> e Termos de uso
+      </div>        
+    </ion-navbar>     
+    <div class="login-inputs" >    
+      <ion-row nomargin nopadding>
+        <ion-col col-12 style="margin: 0px; padding: 0px;">
+          <div class="conteudo">
+            {{item.Titulo}}
+          </div>
+          <div class="descricao" >
+            <p [innerHTML]="item.Descricao"></p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

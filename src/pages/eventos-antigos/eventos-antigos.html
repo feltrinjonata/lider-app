@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-on.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+<ion-content class="transparente pantera"> 
+  <ion-card class="card-eventos">
+    <p class="btn-novo action_evento" (click)="abrirPaginaAnterior()">
+      ANTERIORES
+    </p>          
+    <p class="btn-novo" (click)="abrirPaginaProximo()">
+      PRÓXIMOS
+    </p>
+  </ion-card>
+  <ion-card *ngFor="let item of relEventos" class="novidades-card">
+    <ion-card-content (click)="selecionarEventoAntigo(item)">
+      <h2 class="video-card-titulo">{{ item.Titulo }}</h2>
+      <p class="video-card-desc">{{ item.Data }}</p>
+    </ion-card-content>
+    <ion-card-content class="box-novidades" (click)="selecionarEventoAntigo(item)">
+      <img src="{{ api }}/{{ item.Caminho }}/{{ item.Pasta }}/{{ item.Img }}_400.jpg" />
+    </ion-card-content>
+  </ion-card>
+</ion-content>     
+<ion-footer class="menu_footer">
+  <div class="ico-menu-footer"> 
+    <ng-container *ngIf="qtdePublicacoes > 0">
+      <ion-badge item-end color="danger" class="menu-footer-bola">{{qtdePublicacoes}}</ion-badge>
+    </ng-container>
+    <img src="assets/imgs/ico-menu-footer-novidades.png" (click)="abrirPaginaHome()">  
+    <p class="menu_footer_texto" (click)="abrirPaginaHome()">
+      Novidades
+    </p>
+  </div>
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-pl.png" (click)="abrirPaginaPl()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaPl()">
+      Matérias
+    </p>          
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-loja-menu-revista.png" (click)="abrirPaginaPublicacoes()">     
+    <p class="menu_footer_texto" (click)="abrirPaginaPublicacoes()">
+      Publicações
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-aulas.png" (click)="abrirPaginaTitulos()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaTitulos()">
+      Vídeos
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-podcast.png" (click)="abrirPaginaOntoarte()">  
+    <p class="menu_footer_texto" (click)="abrirPaginaOntoarte()">
+      Áudios
+    </p>          
+  </div>       
+</ion-footer>

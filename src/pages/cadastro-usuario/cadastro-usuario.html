@@ -1,0 +1,133 @@
+<ion-content class="login-content no-scroll">
+  <div class="login-card">
+    <ion-navbar>
+      <button ion-button menuToggle start>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <div class="login-logo">
+        <img src="assets/imgs/slide-intro/logo-intro.png">
+      </div>                
+    </ion-navbar>     
+    <div class="login-inputs">
+      <div class="titulo">
+        Cadastro
+      </div>        
+      <form [formGroup]="authForm" (ngSubmit)="onSubmit(authForm.value)">
+            
+        <div [ngClass]="{'error-border':!authForm.controls.NomeUser.valid && authForm.controls.NomeUser.touched}">
+          <ion-input class="input-btn" formControlName="NomeUser" type="text" placeholder="Nome *" name="nomeUser" value="" required ></ion-input>
+        </div>
+        <div class="msg-caixa" *ngIf="authForm.controls.NomeUser.hasError('required') && authForm.controls.NomeUser.touched">
+          <p class="msg-erro">Este campo é obrigatório!</p>
+        </div>
+        <div class="msg-caixa" *ngIf="authForm.controls.NomeUser.hasError('minlength') && authForm.controls.NomeUser.touched">
+          <p class="msg-erro">Campo deve ter o tamanho mínimo de 3 caracteres.</p>
+        </div>
+        <div class="msg-caixa" *ngIf="authForm.controls.NomeUser.hasError('maxlength') && authForm.controls.NomeUser.touched">
+          <p class="msg-erro">Campo deve ter o tamanho máximo de 255 caracteres.</p>
+        </div>
+
+        <div [ngClass]="{'error-border':!authForm.controls.SobrenomeUser.valid && authForm.controls.SobrenomeUser.touched}">     
+          <ion-input class="input-btn" formControlName="SobrenomeUser" type="text" placeholder="Sobrenome *" name="sobrenomeUser" value="" required ></ion-input>
+        </div> 
+        <div class="msg-caixa" *ngIf="authForm.controls.SobrenomeUser.hasError('required') && authForm.controls.SobrenomeUser.touched">
+          <p class="msg-erro">Este campo é obrigatório!</p>
+        </div>  
+        <div class="msg-caixa" *ngIf="authForm.controls.SobrenomeUser.hasError('minlength') && authForm.controls.SobrenomeUser.touched">
+          <p class="msg-erro">Campo deve ter o tamanho mínimo de 3 caracteres.</p>
+        </div>
+        <div class="msg-caixa" *ngIf="authForm.controls.SobrenomeUser.hasError('maxlength') && authForm.controls.SobrenomeUser.touched">
+          <p class="msg-erro">Campo deve ter o tamanho máximo de 255 caracteres.</p>
+        </div>
+        <!--
+        <div [ngClass]="{'error-border':!authForm.controls.CpfUser.valid && authForm.controls.CpfUser.touched}">         
+          <ion-input class="input-btn" formControlName="CpfUser" type="text" placeholder="CPF *" name="CpfUser" required [brmasker]="{mask:'000.000.000-00', len:14, type:'num'}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></ion-input>
+        </div> 
+        <div class="msg-caixa" *ngIf="authForm.controls.CpfUser.hasError('required') && authForm.controls.CpfUser.touched">
+          <p class="msg-erro">Este campo é obrigatório!</p>
+        </div>  
+
+        <div [ngClass]="{'error-border':!authForm.controls.DataUser.valid && authForm.controls.DataUser.touched}">         
+          <ion-input class="input-btn" formControlName="DataUser" type="text" placeholder="Data de Nascimento" name="DataUser" required [brmasker]="{mask:'00/00/0000', len:10, type:'num'}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></ion-input>
+        </div> 
+
+        <div class="msg-caixa" *ngIf="authForm.controls.DataUser.hasError('required') && authForm.controls.DataUser.touched">
+          <p class="msg-erro">Este campo é obrigatório!</p>
+        </div>          
+
+        <div [ngClass]="{'error-border':!authForm.controls.EmpresaUser.valid && authForm.controls.EmpresaUser.touched}">          
+          <ion-input class="input-btn" formControlName="EmpresaUser" type="text" placeholder="Empresa" name="EmpresaUser" ></ion-input>
+        </div> 
+        <div class="msg-caixa" *ngIf="authForm.controls.EmpresaUser.hasError('maxlength') && authForm.controls.EmpresaUser.touched">
+          <p class="msg-erro">Campo deve ter o tamanho máximo de 255 caracteres.</p>
+        </div>
+        -->
+        <div [ngClass]="{'error-border':!authForm.controls.EmailUser.valid && authForm.controls.EmailUser.touched}">        
+          <ion-input class="input-btn" formControlName="EmailUser" type="email" placeholder="E-mail *" name="EmailUser" value="" required ></ion-input>
+        </div> 
+        <div class="msg-caixa" *ngIf="authForm.controls.EmailUser.hasError('required') && authForm.controls.EmailUser.touched">
+          <p class="msg-erro">Este campo é obrigatório!</p>
+        </div>  
+        <div class="msg-caixa" *ngIf="authForm.controls.EmailUser.hasError('pattern') && authForm.controls.EmailUser.touched">
+          <p class="msg-erro">Digite um e-mail válido!</p>
+        </div>
+        <div class="msg-caixa" *ngIf="authForm.controls.EmailUser.hasError('maxlength') && authForm.controls.EmailUser.touched">
+          <p class="msg-erro">Campo deve ter o tamanho máximo de 255 caracteres.</p>
+        </div>
+        <!--
+        <div [ngClass]="{'error-border':!authForm.controls.CelularUser.valid && authForm.controls.CelularUser.touched}">         
+          <ion-input class="input-btn" formControlName="CelularUser" type="text" placeholder="Celular" name="CelularUser" required [brmasker]="{mask:'(00) 00000-0000', len:15, type:'num'}" autocomplete="off" autocorrect="oof" autocapitalize="off" spellcheck="false"></ion-input>
+        </div> 
+
+        <div class="msg-caixa" *ngIf="authForm.controls.CelularUser.hasError('required') && authForm.controls.CelularUser.touched">
+          <p class="msg-erro">Este campo é obrigatório!</p>
+        </div>  
+        -->
+        <div [ngClass]="{'error-border':!authForm.controls.SenhaUser.valid && authForm.controls.SenhaUser.touched}">          
+          <ion-input class="input-btn" formControlName="SenhaUser" type="password" placeholder="Digite a sua senha *" name="SenhaUser" value="" required ></ion-input>        
+        </div> 
+        <div class="msg-caixa" *ngIf="authForm.controls.SenhaUser.hasError('required') && authForm.controls.SenhaUser.touched">
+          <p class="msg-erro">Este campo é obrigatório!</p>
+        </div>  
+        <div class="msg-caixa" *ngIf="authForm.controls.SenhaUser.hasError('minlength') && authForm.controls.SenhaUser.touched">
+          <p class="msg-erro">Campo deve ter o tamanho mínimo de 6 caracteres.</p>
+        </div>
+        <div class="msg-caixa" *ngIf="authForm.controls.SenhaUser.hasError('maxlength') && authForm.controls.SenhaUser.touched">
+          <p class="msg-erro">Campo deve ter o tamanho máximo de 25 caracteres.</p>
+        </div>
+
+        <div [ngClass]="{'error-border':!authForm.controls.SenhaConfirmar.valid && authForm.controls.SenhaConfirmar.touched}">          
+          <ion-input class="input-btn" formControlName="SenhaConfirmar" type="password" placeholder="Confirme sua senha *" name="SenhaConfirmar" value="" required ></ion-input>        
+        </div> 
+        <div class="msg-caixa" *ngIf="authForm.controls.SenhaConfirmar.hasError('required') && authForm.controls.SenhaConfirmar.touched">
+          <p class="msg-erro">Este campo é obrigatório!</p>
+        </div>  
+        <div class="msg-caixa" *ngIf="authForm.controls.SenhaConfirmar.hasError('minlength') && authForm.controls.SenhaConfirmar.touched">
+          <p class="msg-erro">Campo deve ter o tamanho mínimo de 6 caracteres.</p>
+        </div>
+        <div class="msg-caixa" *ngIf="authForm.controls.SenhaConfirmar.hasError('maxlength') && authForm.controls.SenhaConfirmar.touched">
+          <p class="msg-erro">Campo deve ter o tamanho máximo de 25 caracteres.</p>
+        </div>
+        <!--
+        <div class="cx-aceita-termos">
+          <ion-checkbox formControlName="aceitotermo" name="aceitotermo" required="" class="chebox-aceito"></ion-checkbox>
+          <a class="politica" (click)="VerPolitica()">Li e concordo com a Política de Privacidade.</a>  
+        </div>
+
+        <ion-input value="{{QualNivel}}" formControlName="nivel" type="hidden" name="nivel" ></ion-input>   
+        <ion-input value="{{QualNivelNome}}" formControlName="nivelnome" type="hidden" name="nivelnome" ></ion-input>   
+        <ion-input value="{{QualNivelValor}}" formControlName="nivelvalor" type="hidden" name="nivelvalor" ></ion-input>  
+
+        <div class="login-btn-outros">
+          <div class="btn" (click)="escolherPlano()">Selecione um plano de assinatura</div>
+        </div>
+        -->
+        <div class="login-btn-entrar">
+          <button ion-button full color="primary" class="login-btn-entrar-button" [disabled]="!authForm.valid" type="submit">{{BotaoCadastrar}}</button>        
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</ion-content>

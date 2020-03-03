@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>testes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <ion-list>
+          <ion-item>
+            <ion-checkbox formControlName="cbox"></ion-checkbox>
+            <ion-label item-right>mandatory</ion-label>
+          </ion-item>
+          <button ion-item [disabled]="!form.valid">submit form</button>
+        </ion-list>
+      </form>
+</ion-content>

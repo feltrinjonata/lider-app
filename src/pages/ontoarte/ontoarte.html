@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header> 
+
+<ion-content class="transparente pantera">
+
+    <ion-card class="card-back">
+        <img src="assets/imgs/background-header-audio.jpg" />  
+        <div class="titulo-card-back">
+          <h1>Áudios</h1>
+        </div>
+    </ion-card>
+
+    <ion-card class="titulos-card">
+        <ion-card-content>
+            <ion-card-title class="titulos-card-chamadas">
+                <h2 class="titulos-card-titulo-chamadas">Áudio Líder</h2>
+            </ion-card-title>   
+        </ion-card-content>        
+    </ion-card>
+    <ion-card class="slide-card">
+      <ion-card-content>
+        <ion-slides loop="false" slidesPerView="3" speed="1000" pager="false" #productSlides>
+
+          <ion-slide class="slide-card-li" *ngFor= "let item of relAlbuns" (click)="selecionado(item)">
+            <img src="{{api}}/{{item.Caminho}}/{{item.Pasta}}/{{item.Img}}_400.jpg" />
+            <!--
+            <p class="slide-card-texto">
+              <strong>{{ item.Titulo }}</strong>
+              <br>{{ item.Subtitulo }}
+            </p>
+            -->
+          </ion-slide>
+
+        </ion-slides>            
+      </ion-card-content>
+    </ion-card> 
+                  
+</ion-content>
+<ion-footer class="menu_footer">
+  <div class="ico-menu-footer"> 
+    <ng-container *ngIf="qtdePublicacoes > 0">
+      <ion-badge item-end color="danger" class="menu-footer-bola">{{qtdePublicacoes}}</ion-badge>
+    </ng-container>
+    <img src="assets/imgs/ico-menu-footer-novidades.png" (click)="abrirPaginaHome()">  
+    <p class="menu_footer_texto" (click)="abrirPaginaHome()">
+     Novidades
+    </p>
+  </div>
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-pl.png" (click)="abrirPaginaPl()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaPl()">
+      Matérias
+    </p>          
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-loja-menu-revista.png" (click)="abrirPaginaPublicacoes()">     
+    <p class="menu_footer_texto" (click)="abrirPaginaPublicacoes()">
+      Publicações
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-aulas.png" (click)="abrirPaginaTitulos()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaTitulos()">
+      Vídeos
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-podcast-s.png" (click)="abrirPaginaOntoarte()">  
+    <p class="menu_footer_texto menu_footer_texto_novidades" (click)="abrirPaginaOntoarte()">
+      Áudios
+    </p>          
+  </div>       
+</ion-footer>

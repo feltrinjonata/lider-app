@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_carrinho" (click)="abrirCarrinho()">
+      <ion-badge item-end color="danger" class="menu-loja-bola">{{qtCarrinho}}</ion-badge>
+      <ion-icon name="ios-cart-outline" class="header_carrinho2"></ion-icon> 
+    </div>    
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">     
+    </div>        
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    
+    <ion-card class="livros-card">
+        <ion-row>
+            <ion-col col12>
+                <h1 class="tituloGrande"><i>{{ item.Titulo }}</i></h1>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col12>
+                <img src="{{ api }}/{{ item.Caminho }}/{{ item.Pasta }}/{{ item.Img }}_400.jpg" class="img-capa"/> 
+            </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="item.Caminho != 'videos' && item.Caminho != 'albuns'" class="mt10">
+            <ion-col col8 margin-left margin-right>
+                <div class="botao-comprar" (click)= "Comprar(item, 'ebook')">
+                    Comprar E-book
+                </div>
+            </ion-col> 
+        </ion-row>
+
+        <ion-row *ngIf="item.Caminho == 'livros'">                   
+            <ion-col col8 margin-left margin-right>
+                <div class="botao-comprar" (click)= "Comprar(item, 'fisico')">
+                   Comprar Livro Impresso
+                </div>
+            </ion-col>            
+        </ion-row>
+        <ion-row *ngIf="item.Caminho == 'pl'">                   
+            <ion-col col8 margin-left margin-right>
+                <div class="botao-comprar" (click)= "Comprar(item, 'fisico')">
+                    Comprar Revista Impressa
+                </div>
+            </ion-col>            
+        </ion-row>
+
+        <ion-row *ngIf="item.Caminho == 'albuns'">                   
+            <ion-col col8 margin-left margin-right>
+                <div class="botao-comprar" (click)= "Comprar(item, 'cd')">
+                    Comprar CD/DVD Físico
+                </div>
+            </ion-col>            
+        </ion-row>
+        <ion-row *ngIf="item.Caminho == 'videos'" class="mt10">
+            <ion-col col8 margin-left margin-right>
+                <div class="botao-comprar" (click)= "Comprar(item, 'video')">
+                    Comprar Vídeos Aulas
+                </div>
+            </ion-col> 
+        </ion-row>
+
+        <ion-row class="mb20">
+            <ion-col col12 padding>
+                <div class="desc" [innerHTML]="item.Descricao"></div>  
+            </ion-col>
+        </ion-row>        
+    </ion-card>
+
+       
+</ion-content>

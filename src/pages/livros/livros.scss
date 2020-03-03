@@ -1,0 +1,211 @@
+page-livros {
+    .card-ios p {
+        color:#fff;
+        font-size: 15px;
+        font-family: 'DINPro-Light';  
+        background: transparent;  
+    } 
+    .card-md p {
+        color:#fff;
+        font-size: 15px;
+        font-family: 'DINPro-Light';  
+        background: transparent;  
+    }     
+    .tituloGrande{
+        padding:5px 0px 2px 0px;
+        font-size: 16px;
+        color:#fff;
+        font-family: 'DINPro-Bold';  
+        text-align: center;
+    }
+    .subtituloGrande{
+        padding:2px 0px 5px 2px;
+        font-size: 13px;
+        color:#fff;
+        font-family: 'DINPro-light';  
+        text-align: center;
+    }    
+    .titulo{
+        margin: 5px 0px 0px 0px;
+        font-family: 'DINPro-Bold';  
+        padding: 0px;
+        font-size: 10px;
+        color:#fff;
+    }
+    .subtitulo{
+        margin: 0px;
+        padding: 0px;
+        font-size: 10px;
+        color:#fff;
+    }
+    .livros-card{
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 53px 18px rgba(0,0,0,0.28);
+        -moz-box-shadow: 0px 0px 53px 18px rgba(0,0,0,0.28);
+        box-shadow: 0px 0px 53px 18px rgba(0,0,0,0.28);        
+        font-family: 'DINPro-light';     
+    }
+    .livros-card .img-capa{
+        padding-top:20px;
+        padding-bottom:10px;
+        max-width: 150px;
+        text-align: center;
+        margin: 0 auto;        
+    } 
+    .livros-card .detalhes{
+        padding-bottom:15px;
+        font-size: 15px;
+        color: #fff; 
+        text-align: center;    
+        font-family: 'DINPro-light';     
+    }
+    .livros-card .livros-card-btn-ler-mais{
+        width: 200px;
+        background: #d5b340;
+        border-radius: 30px;
+        color:#fff;
+        text-align: center;  
+        margin: 0 auto;  
+        font-weight: bold; 
+        padding: 12px; 
+        font-family: 'DINPro-Bold';     
+    }
+    .livros-card .desc{
+        padding-top:15px;      
+        font-size: 14px;
+        color: #fff;   
+        width: 100%;  
+        font-family: 'DINPro-light';     
+    }
+    .livros-card .leia-mais{        
+        font-size: 14px;
+        color: #d5b340;   
+        width: 100%; 
+        text-align: right;  
+        text-decoration: underline;   
+    }  
+	.slide-card .slide-card-chamadas{
+		border-bottom: 2px solid #d5b340;
+	}
+	.slide-card .slide-card-titulo-chamadas{
+		color:#fff;
+		font-weight: bold;
+		font-size: 16px;
+        font-family: 'DINPro-Bold';     
+    }
+	.slide-card{ 
+		border: 0px;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		background: transparent;
+		-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+		-moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+		box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);    
+    }  
+                      
+	.icone-livros-down{
+		float: left;
+		width: 20%;
+        text-align: center;
+        padding-bottom: 25px;
+        margin: -10px 0;
+    }
+    .icone-livros-down p{
+        color: #fff;
+        font-size: 10px;
+        padding-top: 5px;
+    }
+    .icone-livros-down img{
+        width: 40%;
+        margin: 0 auto;
+    }
+	.icone-livros-down .ion-icone-livros-down{
+		color:#d5b340;
+        font-size: 30px;   
+        padding-bottom: 1px
+    }
+
+    .efeito-magico{
+        background: red;
+        height: 167px;
+    }
+    .slide-card{
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .slide-card .slide-card-chamadas{
+        border-bottom: 2px solid #d5b340;
+    }
+    .slide-card .slide-card-titulo-chamadas{
+        color:#fff;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .slide-card .titulos-card-titulo{
+        color:#fff;
+        font-weight: bold;
+        font-size: 20px;
+    
+    }   
+    .slide-card .slide-card-li{
+        max-width: 33%;
+        padding: 4px; 
+    }      
+    .card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+    
+    .titulo-card-back{
+        position: absolute;
+        top: 30%;
+        font-size: 45px;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);   
+    }
+    
+    .subtitulo-card-back{
+        font-size: 18px;
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);      
+    }
+    .slide-card-li-video{
+        max-width: 50%;
+        padding: 4px; 
+    }     
+
+}
+
+.toast-message{
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    font-weight: bold;
+} 

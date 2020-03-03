@@ -1,0 +1,74 @@
+page-audios {
+    .AudiosList {
+        position: relative;
+        width: 100%;
+        background: #fff;
+        margin: 0px;
+        border-radius: 0px 0px 0px 10px;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        border: 0;
+        text-align: center;
+    }
+    .menu_footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        padding: 0px;
+        -webkit-box-shadow: 0px -4px 10px -4px rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0px -4px 10px -4px rgba(0, 0, 0, 0.19);
+        box-shadow: 0px -4px 10px -4px rgba(0, 0, 0, 0.19);
+        z-index: 9999999999;
+        background-color: white;
+    }
+    .listItem {
+        background: transparent;
+        border: 0px;
+    }
+    .tituloFaixa {
+        font-size: 18px;
+        color: #565656;
+        font-family: 'DINPro-light';
+        font-weight: bold;
+    }
+    .subtituloFaixa {
+        font-size: 13px;
+        color: #615f5f;
+        font-family: 'DINPro-light';
+    }
+    audio.non-downloadable::-webkit-media-controls-enclosure {
+        overflow: hidden;
+    }
+    audio.non-downloadable::-webkit-media-controls-panel {
+        width: calc(100% + 32px);
+    }
+    .list-ios>.item-block:last-child,
+    .list-ios>.item-wrapper:last-child .item-block {
+        border-bottom: 0;
+    }
+    .list-ios>.item-block:first-child {
+        border-top: 0;
+    }
+    .albumTitulo {
+        font-size: 20px;
+        color: #010000;
+        font-family: 'DINPro-light';
+        font-weight: bold;
+        padding: 0px 15px 0px 0px;
+        margin: 15px 0px 3px 0px;
+    }
+    .albumSubtitulo {
+        font-size: 13px;
+        color: #010000;
+        font-family: 'DINPro-light';
+        padding: 0px 15px 0px 0px;
+        margin: 5px 0px 8px 0px;
+    }
+    .albumDesc {
+        font-size: 12px;
+        color: #bcb9b9;
+        padding: 0px 15px 0px 0px;
+        margin: 0px 0px 15px 0px;
+    }
+}

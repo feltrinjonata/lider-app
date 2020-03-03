@@ -1,0 +1,31 @@
+<ion-content class="login-content no-scroll-y scroll-content-y">
+  <div class="login-card">
+    <ion-navbar>
+      <button ion-button block (click)="fecharModal()" class="bt-fecha-modal">X</button>
+      <div class="login-logo">
+        <img src="assets/imgs/slide-intro/logo-intro.png">
+      </div>          
+      <div class="titulo">
+        Alterar o plano
+      </div>        
+    </ion-navbar>     
+    <div class="fundo">
+
+      <div class="caixa" *ngFor="let plano of relPlanos; let i = index" (click)="selecionarPlano(plano)">
+        <div class="nedo{{i}}">
+          <h1 class="titulo-plano">{{plano.Titulo}}</h1>
+          <p class="subtitulo-plano">{{plano.Subtitulo}}</p>
+          <p class="preco-plano">{{plano.ValorEscrito}}</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="login-btn-outros">
+      <div class="btn" (click)="VerPolitica()">Política de privacidade e termo de uso</div>
+    </div>
+    <div class="login-btn-outros">
+      <div class="btn" (click)="VerCobranca()">Informações de cobrança</div>
+    </div>      
+  </div>
+</ion-content>
+  

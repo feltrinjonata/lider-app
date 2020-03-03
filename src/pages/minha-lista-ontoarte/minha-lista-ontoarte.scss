@@ -1,0 +1,528 @@
+page-minha-lista-ontoarte {
+    .editar{
+        position: absolute;
+        max-width: 50px;  
+        right:25px;
+        font-size: 15px;
+        color:#d5b340;
+        margin-top:16px;          
+    }
+    .editar-img{
+        position: absolute;
+        max-width: 15px;  
+        right:5px;
+        margin-top:16px;    
+    } 
+    .titulo{
+        margin: 5px 0px 0px 0px;
+        font-weight: bold;
+        padding: 0px;
+        font-size: 11px;
+        text-align: center;
+        color:#fff;
+    }
+    .meu-progeto-titulo{
+        color:#aaa7a7;
+        text-align: center;
+        font-size: 18px;  
+        font-family: 'Lato';    
+        border: 0px;
+        width: 100%;
+        margin: 0px;      
+    }
+    .novidades-card{    
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);    
+    }
+    .video-card-titulo{
+        color:#616161;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 13px;    
+        font-family: 'Lato';     
+    }
+    .video-card-desc{
+        color:#616161;
+        font-size: 12px;  
+        font-family: 'Lato';     
+    } 
+    .video-card-categoria{
+        color:#d5b340;
+        font-weight: bold;   
+        font-family: 'Lato'; 
+        text-transform: uppercase; 
+        padding-bottom: 10px; 
+    }
+    .video-play-card{
+        top:-55px;
+        background: transparent;
+        font-family: 'Lato';     
+    }
+    .video-play-card-btn{  
+        width:40px; 
+        position: absolute;
+        left: 10px;
+        top: 7px;
+        font-family: 'Lato';     
+    }
+    .video-play-card-tempo{
+        float:left; 
+        background: rgba(52,52,52,0.8);
+        margin: 0px 3px 0px -10px;
+        padding: 7px;
+        padding-left: 50px;    
+        color:#fff;   
+        font-size: 13px;
+        font-family: 'Lato';     
+    }
+    .video-play-card-views{
+        float:left; 
+        background: rgba(52,52,52,0.8);
+        padding: 7px;
+        color:#fff; 
+        font-size: 13px;           
+        font-family: 'Lato';     
+    }
+    .card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+    .titulo-card-back{
+        position: absolute;
+        top: 55px;
+        font-size: 25px;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);   
+        font-family: 'Lato';      
+    }
+    .subtitulo-card-back{
+        font-size: 18px;
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);    
+        font-family: 'Lato';  
+    }
+    .titulos-card{
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .titulos-card .titulos-card-chamadas{
+        border-bottom: 2px solid #000;
+    }
+    .titulos-card .titulos-card-titulo-chamadas{
+        color:#fff;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Lato';
+    }
+    .titulos-card-titulo{
+        color:#fff;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Lato';
+    }  
+    .card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+    .btn-novo{
+        border-bottom: 3px solid #fff;
+        color:#d5b340; 
+        font-family: 'Lato'; 
+        text-transform: uppercase; 
+        color:#fff;
+        width: 50%;
+        float: left;
+        padding: 10px;
+        text-align: center;   
+    }
+    .action_evento{
+        color: #d5b340;
+        border-bottom: 3px solid #d5b340;
+
+    }
+    .eventoTitulo{
+        color:#fff;
+        font-size: 22px;
+        font-family: 'Lato';     
+        font-weight: bold;  
+    }
+    .eventoTitulo{
+        color:#fff;
+        font-size: 18px;
+        font-family: 'Lato';       
+    }
+    .card-eventos{
+        position: relative;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }  
+    .footer_menu_audio{
+        padding-top: 10px;
+    }
+    .imgControl {
+        width: 100%;
+    }
+    .div_player {
+        border-bottom: 0px solid #d5b340;
+    }
+    .player_texto_musica {
+        text-align: center;
+        font-size: 14px;
+        color: #fff;        
+        font-family: 'DINPro-Bold';
+        font-weight: bold;
+        margin-top: 4px;
+    }
+    .player_texto_musica .span_texto {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        font-family: 'DINPro-light';
+    }
+    .player {
+        display: none;
+        width: 100%;
+        border: 0px;
+    }
+    .range-knob {
+        display: none;
+    }
+    .range-slider { 
+        height: 3px;
+        width: 100%;
+    }
+    .range-bar {
+        top: -10px;
+        width: 100%;
+        height: 4px;
+    }
+    .range-ios .range-bar {
+        height: 4px;
+    }
+    .range-ios .range-bar-active, .range-md .range-bar-active{
+        background:#e2b332;
+    }
+    .range {
+        top: -5px;
+        left: -4px;
+        width: 103%;
+        height: 4px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+    }
+    .AudiosList {
+        position: relative;
+        width: 100%;
+        background: transparent;
+        margin: 0px;
+        border-radius: 0px 0px 0px 10px;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        border: 0;
+        text-align: center;
+    }
+    .menu_footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        padding: 0px;
+        -webkit-box-shadow: 0px -4px 10px -4px rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0px -4px 10px -4px rgba(0, 0, 0, 0.19);
+        box-shadow: 0px -4px 10px -4px rgba(0, 0, 0, 0.19);
+        z-index: 9999999999;
+        background: #000;
+    }
+    .listItem {
+        background: transparent;
+        border: 0px;
+    }
+    .tituloFaixa {
+        font-size: 15px;
+        color: #fff;
+        font-family: 'DINPro-Bold';
+        font-weight: bold;
+        background: transparent;
+    }
+    .subtituloFaixa {
+        font-size: 12px;
+        color: #fff;
+        background: transparent;
+    }
+    audio.non-downloadable::-webkit-media-controls-enclosure {
+        overflow: hidden;
+    }
+    audio.non-downloadable::-webkit-media-controls-panel {
+        width: calc(100% + 32px);
+    }
+    .list-ios>.item-block:last-child,
+    .list-ios>.item-wrapper:last-child .item-block {
+        border-bottom: 0;
+    }
+    .list-ios>.item-block:first-child {
+        border-top: 0;
+    }
+    .albumTitulo {
+        font-size: 20px;
+        color: #d5b340;
+        font-family: 'DINPro-Bold';
+        font-weight: bold;
+        padding: 0px 15px 0px 0px;
+        margin: 15px 0px 3px 0px;
+        background: transparent;
+    }
+    .albumSubtitulo {
+        font-size: 13px;
+        color: #fff;
+        font-family: 'DINPro-light';
+        padding: 0px 15px 0px 0px;
+        margin: 5px 0px 8px 0px;
+        background: transparent;
+    }
+    .albumDesc {
+        font-size: 11px;
+        color: #bcb9b9;
+        padding: 0px 15px 0px 0px;
+        background: transparent;
+        margin: 0px 0px 15px 0px;
+    }
+    .icone-livros-down {
+        float: left;
+        width: 20%;
+        text-align: center;
+        padding-bottom: 25px;
+        margin: -10px 0;
+    }
+    .icone-livros-down p {
+        color: #d5b340;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .icone-livros-down img {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .icone-livros-down .ion-icone-livros-down {
+        color: #d5b340;
+        font-size: 30px;
+        padding-bottom: 1px
+    }
+    .AudioTempo{
+        width: 100%; 
+        float: left;
+        background: transparent;
+        color: #fff;        
+    }
+    .AudioTempo p{
+        font-size: 11px;
+        background: transparent;
+        color: #fff;
+    }    
+.footer_menu_audio{
+        padding-top: 10px;
+    }
+    .imgControl {
+        width: 100%;
+    }
+    .div_player {
+        border-bottom: 0px solid #d5b340;
+    }
+    .player_texto_musica {
+        text-align: center;
+        font-size: 14px;
+        color: #fff;        
+        font-family: 'DINPro-Bold';
+        font-weight: bold;
+        margin-top: 4px;
+    }
+    .player_texto_musica .span_texto {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        font-family: 'DINPro-light';
+    }
+    .player {
+        display: none;
+        width: 100%;
+        border: 0px;
+    }
+    .range-knob {
+        display: none;
+    }
+    .range-slider { 
+        height: 3px;
+        width: 100%;
+    }
+    .range-bar {
+        top: -10px;
+        width: 100%;
+        height: 4px;
+    }
+    .range-ios .range-bar {
+        height: 4px;
+    }
+    .range-ios .range-bar-active, .range-md .range-bar-active{
+        background:#e2b332;
+    }
+    .range {
+        top: -5px;
+        left: -4px;
+        width: 103%;
+        height: 4px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+    }
+    .AudiosList {
+        position: relative;
+        width: 100%;
+        background: transparent;
+        margin: 0px;
+        border-radius: 0px 0px 0px 10px;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        border: 0;
+        text-align: center;
+    }
+    .menu_footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        padding: 0px;
+        -webkit-box-shadow: 0px -4px 10px -4px rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0px -4px 10px -4px rgba(0, 0, 0, 0.19);
+        box-shadow: 0px -4px 10px -4px rgba(0, 0, 0, 0.19);
+        z-index: 9999999999;
+        background: #000;
+    }
+    .listItem {
+        background: transparent;
+        border: 0px;
+    }
+    .tituloFaixa {
+        font-size: 15px;
+        color: #fff;
+        font-family: 'DINPro-Bold';
+        font-weight: bold;
+        background: transparent;
+    }
+    .subtituloFaixa {
+        font-size: 12px;
+        color: #fff;
+        background: transparent;
+    }
+    audio.non-downloadable::-webkit-media-controls-enclosure {
+        overflow: hidden;
+    }
+    audio.non-downloadable::-webkit-media-controls-panel {
+        width: calc(100% + 32px);
+    }
+    .list-ios>.item-block:last-child,
+    .list-ios>.item-wrapper:last-child .item-block {
+        border-bottom: 0;
+    }
+    .list-ios>.item-block:first-child {
+        border-top: 0;
+    }
+    .albumTitulo {
+        font-size: 20px;
+        color: #d5b340;
+        font-family: 'DINPro-Bold';
+        font-weight: bold;
+        padding: 0px 15px 0px 0px;
+        margin: 15px 0px 3px 0px;
+        background: transparent;
+    }
+    .albumSubtitulo {
+        font-size: 13px;
+        color: #fff;
+        font-family: 'DINPro-light';
+        padding: 0px 15px 0px 0px;
+        margin: 5px 0px 8px 0px;
+        background: transparent;
+    }
+    .albumDesc {
+        font-size: 11px;
+        color: #bcb9b9;
+        padding: 0px 15px 0px 0px;
+        background: transparent;
+        margin: 0px 0px 15px 0px;
+    }
+    .icone-livros-down {
+        float: left;
+        width: 20%;
+        text-align: center;
+        padding-bottom: 25px;
+        margin: -10px 0;
+    }
+    .icone-livros-down p {
+        color: #d5b340;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .icone-livros-down img {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .icone-livros-down .ion-icone-livros-down {
+        color: #d5b340;
+        font-size: 30px;
+        padding-bottom: 1px
+    }
+    .AudioTempo{
+        width: 100%; 
+        float: left;
+        background: transparent;
+        color: #fff;        
+    }
+    .AudioTempo p{
+        font-size: 11px;
+        background: transparent;
+        color: #fff;
+    }    
+}

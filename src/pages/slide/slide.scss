@@ -1,0 +1,201 @@
+page-slide {
+    .slide-intro{
+        background: url(../assets/imgs/background-app.png) no-repeat center center;
+        background-size: cover;
+        width: 100%;
+    }
+    .slide-intro-logo1 img{
+        margin: 0 auto;
+        max-width: 100px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .intro-tela1-img img{
+        max-width: 60%;
+        bottom: 0;
+        margin-top: 0px;
+    }
+    .tela1-titulo{
+        color:#d5b340;
+        font-size: 24px; 
+        font-family: 'BodoniBkBTBook';       
+        text-transform: uppercase;
+    }
+    .tela1-texto{
+        color:#fff; 
+        font-size: 12px;
+        font-family: 'Lato';        
+        padding: 0px 30px 20px 30px;
+    }  
+
+    .slide-intro-logo3{
+        width: 100%;
+        top: 0;
+        position: absolute;
+        z-index: 999999;
+    }
+    .slide-intro-logo3 img{
+        max-width: 100px;
+        margin-top: 50px;
+    }    
+    .intro-tela3-img{
+        width: 100%;
+        top: -20px;
+        position: absolute;
+    }
+    .tela3-texto{
+        width: 100%;
+        bottom: 110px;
+        position: absolute;        
+        color:#fff;
+        font-size: 20px;
+        font-family: 'DINPro-light';
+        padding: 0px 30px 0px 30px;
+    }  
+    .tela3-texto2{
+        width: 100%;
+        bottom: 65px;
+        position: absolute;        
+        color: #d5b340;
+        font-size: 23px;
+        font-family: 'DINPro-Bold';
+        padding: 0px 30px 0px 30px;
+    } 
+    
+    .intro-tela4-img img{
+        max-width: 60%;
+        bottom: 0;
+        margin-top: 10px;
+    }
+    .tela4-texto{
+        color:#fff;
+        font-size: 20px;
+        font-family: 'Lato';        
+        padding: 0px 30px 0px 30px;
+    }  
+    .tela4-texto span{
+        color:#d5b340;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: 'Lato';        
+    }      
+    .slide-intro-logo4{
+        margin: 0 auto;
+        width: 100%;
+        top:0px;        
+    }
+    .slide-intro-logo4 img{
+        max-width: 100px;    
+        margin-top: 20px;  
+    }   
+    
+    .slide-intro-logo5{
+        position: absolute;
+        width: 100%;
+        top:30px;        
+    }
+    .slide-intro-logo5 img{
+        max-width: 100px;    
+        margin-top: 20px;  
+    }     
+    .slide-tela5{
+        background: url(../assets/imgs/background-app.png) no-repeat center center;
+        background-size: cover;
+    }
+    .tela5-texto{
+        color:#fff;
+        font-size: 32px;
+        font-family: 'DINPro-light';        
+        padding: 0px 30px 0px 30px;
+    }  
+    .tela5-texto span{
+        font-family: 'DINPro-Bold';    
+        font-size: 35px;
+    }      
+    .tela5-btn1{
+        position: absolute;
+        bottom:50px;
+        width: 35%;
+        left: 10%;
+        font-size: 13px;  
+        font-weight: bold;  
+        padding-top: 20px;
+        padding-bottom: 20px;    
+        font-family: 'Lato';               
+        background:transparent;
+        border: 1px solid #d5b340;
+        color:#d5b340;
+        border-radius: 35px;        
+    }  
+    .tela5-btn1:focus{             
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000;       
+    }     
+    .tela5-btn1:active{             
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000;       
+    }         
+    .tela5-btn1:hover{             
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000;       
+    }    
+    .tela5-btn1.activated{             
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000;       
+    }    
+
+    .tela5-btn2{
+        position: absolute;
+        bottom:50px;
+        right: 10%;
+        width: 35%;
+        font-size: 13px;   
+        font-weight: bold;  
+        padding-top: 20px;
+        padding-bottom: 20px;                 
+        font-family: 'Lato';          
+        background:transparent;
+        border: 1px solid #d5b340;
+        color:#d5b340; 
+        border-radius: 35px; 
+    }  
+    .tela5-btn2:focus{             
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000;       
+    }     
+    .tela5-btn2:active{             
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000;       
+    }         
+    .tela5-btn2:hover{             
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000;       
+    }      
+    .tela5-btn2.activated{             
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000;       
+    }  
+
+    .swiper-pagination-bullet{
+        border-radius: 100%;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #cacaca;
+        opacity: .99;
+        pointer-events: auto;
+    }      
+    .swiper-pagination-bullet-active{
+        background: #d5b23e;
+        width: 10px;
+        height: 10px;        
+    }
+}

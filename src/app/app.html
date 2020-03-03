@@ -1,0 +1,56 @@
+<ion-menu [content]="content" class="menu-lider">
+  <ion-content>
+    <ion-card class="side-menu-card">
+      <ion-item>
+        <ion-avatar item-start *ngIf="FotoUserQual">
+          <img src="{{ FotoUserQual }}">
+        </ion-avatar>
+        <h2>{{ NomeUserQual }} {{ SobrenomeUserQual }}</h2>
+        <p style="margin-top:-4px;">
+          <i>{{ PlanoUserQual }}</i>
+        </p>
+      </ion-item>
+    </ion-card>
+    <ion-list class="side-menu-novo">
+      <!--
+      <button menuClose ion-item (click)="abrirPaginaDicionario()">
+        <img class="menu-icone-lado mr10" src="assets/imgs/menu-dicionario.png"> Dicionário
+      </button>
+      -->
+      <button menuClose ion-item (click)="abrirPaginaMinhalista()">
+        <img class="menu-icone-lado mr10" src="assets/imgs/menu-minha-lista.png"> Minha Lista
+      </button>
+      <button menuClose ion-item (click)="abrirPaginaNotificacao()">
+        <img class="menu-icone-lado mr10" src="assets/imgs/menu-notificacao.png"> Notificações
+      </button>
+      <button menuClose ion-item (click)="abrirPaginaAtendimento()">
+        <img class="menu-icone-lado mr10" src="assets/imgs/menu-atendimento.png"> Atendimento
+      </button>
+    </ion-list>
+
+
+  </ion-content>
+
+  <ion-footer class="side-menu-footer">
+    <ion-list class="side-menu-footer-novo">
+
+      <button menuClose ion-item (click)="abrirPaginaConta()">
+        Conta
+      </button>
+      <button menuClose ion-item (click)="abrirPaginaTermos()">
+        Termos de Uso e Privacidade
+      </button>
+      <button menuClose ion-item (click)="abrirPaginaSair()">
+        Sair
+      </button>
+
+    </ion-list>
+  </ion-footer>
+
+</ion-menu>
+
+<!-- Audio Player -->
+<page-audio-player></page-audio-player>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false" class="transparente"></ion-nav>

@@ -1,0 +1,94 @@
+page-acabou-teste {
+
+    .scroll-content {
+      padding-bottom: 0!important;
+    }  
+    .login-content{
+      background: url(../assets/imgs/background-app.png) no-repeat center center;
+      background-size: cover;
+      width: 100%;      
+    }
+    .login-card{
+      border-radius: 6px;
+      margin: 20px;
+      height: 94%;
+      background: url(../assets/imgs/loading.gif) no-repeat center center #fff;
+    }  
+    .login-card iframe{
+      margin-top: 17%;
+      height: 90%;
+    }
+    .login-logo{
+      max-width: 50px;
+      margin: 0 auto;
+    }
+    .input-btn{
+      border-bottom: 1px solid #9fa9b5;
+      font-size: 18px;
+      color: #9fa9b5;
+      font-family: 'Lato';
+      width: 100%;
+      padding: 5px;
+      background: #fff;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+    .input-btn:hover{
+      color:#d5b340;
+      border-bottom: 1px solid #d5b340;
+      background: #fdfdfd;
+    }      
+    .login-inputs{
+      margin-top:10%;
+    }
+    .login-texto{
+      color:#d5b340;
+      font-size: 15px;
+    }
+    .login-btn-entrar{
+      position: absolute;
+      bottom:8%;
+      width: 100%;
+      text-align: center;
+    }
+    .login-btn-entrar-button{
+      border: 1px solid #d5b340;
+      border-radius: 8px;
+      background: #fff;
+      padding: 30px;
+      color:#d5b340;
+      width: 80%;
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+      -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);     
+    }  
+    .toolbar-background{
+      background: #fff;
+    }
+    .titulo{
+      color: #d5b340;
+      text-align: center;
+      font-weight: bold;
+      font-size: 21px;
+      font-family: 'Lato';  
+      margin-top:10%;
+    }
+    .box-icone-dicionario{
+      position: absolute;
+      top: 6%;
+      text-align: center;
+      border: 1px solid #d5b340;
+      border-radius: 8px;
+      background: #fff;
+      padding: 3px 6px 3px 6px;
+      color:#d5b340;
+      width: 80%;
+      margin: 10px 15px 0px 15px;
+      font-size: 13px;
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+      -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);      
+    } 
+
+  }
+  

@@ -1,0 +1,109 @@
+page-atendimento {
+  .row{
+    color: #fff;
+  }
+  a{
+    color: #d5b340;
+  }
+  .login-content{
+    background: url(../assets/imgs/background-app.png) no-repeat center center;
+    background-size: cover;
+  }
+  .login-card{
+    border-radius: 25px;
+    margin: 20px;
+    height: 93%;
+    background:transparent;
+  }
+  .titulo{
+    color: #d5b340;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Lato';  
+  } 
+  .fundo{
+    padding: 10px;
+  }
+  .caixa{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #d5b340;
+    border-radius:10px;
+  }
+  .caixa-input{
+    border: 1px solid #d5b340;
+    border-radius:25px;
+    padding: 10px 20px 10px 20px;
+    background: transparent;
+    width: 100%;
+    height: 300px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Lato'; 
+    text-transform: uppercase;    
+  }  
+  .caixa-input:hover{
+    color:#d5b340;
+    border-top: 2px solid #d5b340;
+    border-bottom: 2px solid #d5b340;
+    background: transparent;
+  }    
+  .titulo-entrega{
+    color: #c9c8c8;
+    font-size: 16px;
+    font-family: 'Lato'; 
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+  }
+  .subtitulo-entrega{
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato';     
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+  }
+  .login-btn-entrar{
+    width: 100%;
+    text-align: center;
+  }
+  .login-btn-entrar-button{
+    border: 1px solid #d5b340;
+    border-radius: 25px;
+    background: #d5b340;
+    font-family: 'DINPro-Bold';
+    padding: 25px;
+    color:#fff;
+    width: 100%;
+    margin-top: 25px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);     
+  }  
+  .login-btn-entrar-button:hover{
+    border: 1px solid #d5b340;   
+    background: #d5b340;
+    color:#000;  
+  }    
+  .login-btn-entrar-button:focus{             
+    background: #d5b340;
+    border: 1px solid #d5b340;
+    color:#000;       
+  }  
+  .login-btn-entrar-button:visited{             
+    background: #d5b340;
+    border: 1px solid #d5b340;
+    color:#000;       
+  }         
+  .login-btn-entrar-button:active{             
+    background: #d5b340;
+    border: 1px solid #d5b340;
+    color:#000;       
+  } 
+  .login-btn-entrar-button.activated{             
+    background: #d5b340;
+    border: 1px solid #d5b340;
+    color:#000;     
+  }   
+}

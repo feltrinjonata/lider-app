@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="transparente pantera">
+
+  <div class="fundo">
+    <div class="caixa">
+      <p class="titulo-entrega">Sua foto atual</p>        
+      <div class="">
+
+        <div class="caixa-user" style="border-bottom:0px;"> 
+          <img src="{{FotoUserQual}}">
+        </div>
+
+      </div>
+    </div>   
+  </div>
+  <div class="fundo">
+    <div class="caixa">   
+      <div class="">
+        <div class="caixa-user" style="border-bottom:0px; padding: 20px 0x 20px 0px;"> 
+          <!--
+          <button ion-button (click)="takePhoto()" full color="primary">Tirar um nova Foto?</button>
+          <button ion-button (click)="getImage()" full color="secondary">Buscar um nova foto?</button>
+          -->
+          <button ion-button (click)="cropImage()" full color="danger">Trocar de Foto?</button>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <div class="fundo">
+    <div class="caixa">
+      <p class="titulo-entrega">Nova Foto</p>        
+      <div class="">
+        <div class="caixa-user" style="border-bottom:0px; padding: 0px 0x 20px 0px;"> 
+          <button ion-button (click)="uploadImage()" full color="dark">Enviar foto selecionada!</button>
+          <p align="center"><img src="{{ myphoto }}"></p>
+        </div>
+      </div>
+    </div>   
+  </div>  
+  <div style="border-bottom:0px;"> 
+
+  </div>
+</ion-content>

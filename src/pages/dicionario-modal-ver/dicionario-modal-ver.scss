@@ -1,0 +1,48 @@
+page-dicionario-modal-ver {
+  .novidades-card{    
+    border: 0px;
+    width: 100%;
+    margin: 0px;
+    border-bottom: 1px solid #d5b340;   
+    width: 100%;
+    background: transparent;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0); 
+  }
+  .meu-progeto-titulo{
+    color:#d5b340;
+    text-align: center;
+    font-size: 18px;  
+    font-family: 'Lato';    
+    border: 0px;
+    width: 100%;
+    margin: 0px;      
+}
+  .video-card-titulo{
+    color:#fff; 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;    
+    font-family: 'Lato';     
+  }
+  .video-card-desc{
+    color:#fff;
+    font-size: 15px;  
+    font-family: 'Lato';   
+    margin: 15px 0px 0px 0px;     
+  } 
+  .video-card-desc2{
+    color:#fff;
+    font-size: 15px;  
+    font-family: 'Lato';  
+    margin: 15px 0px 0px 0px;   
+  } 
+  .video-card-tipo{
+    color:#d5b340;
+    font-size: 11px;    
+    font-family: 'Lato'; 
+    float: right;
+    margin-top:4px;    
+  }
+}

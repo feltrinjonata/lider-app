@@ -1,0 +1,207 @@
+page-minha-lista-concerto {
+    .editar{
+        position: absolute;
+        max-width: 50px;  
+        right:25px;
+        font-size: 15px;
+        color:#d5b340;
+        margin-top:-6px;          
+    }
+    .editar-img{
+        position: absolute;
+        max-width: 15px;  
+        right:5px;
+        margin-top:-5px;  
+    } 
+    .titulo{
+        margin: 5px 0px 0px 0px;
+        font-weight: bold;
+        padding: 0px;
+        font-size: 11px;
+        text-align: center;
+        color:#fff;
+    }
+    .meu-progeto-titulo{
+        color:#aaa7a7;
+        text-align: center;
+        font-size: 18px;  
+        font-family: 'Lato';    
+        border: 0px;
+        width: 100%;
+        margin: 0px;      
+    }
+    .novidades-card{    
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);    
+    }
+    .video-card-titulo{
+        color:#616161;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 13px;    
+        font-family: 'Lato';     
+    }
+    .video-card-desc{
+        color:#616161;
+        font-size: 12px;  
+        font-family: 'Lato';     
+    } 
+    .video-card-categoria{
+        color:#d5b340;
+        font-weight: bold;   
+        font-family: 'Lato'; 
+        text-transform: uppercase; 
+        padding-bottom: 10px; 
+    }
+    .video-play-card{
+        top:-55px;
+        background: transparent;
+        font-family: 'Lato';     
+    }
+    .video-play-card-btn{  
+        width:40px; 
+        position: absolute;
+        left: 10px;
+        top: 7px;
+        font-family: 'Lato';     
+    }
+    .video-play-card-tempo{
+        float:left; 
+        background: rgba(52,52,52,0.8);
+        margin: 0px 3px 0px -10px;
+        padding: 7px;
+        padding-left: 50px;    
+        color:#fff;   
+        font-size: 13px;
+        font-family: 'Lato';     
+    }
+    .video-play-card-views{
+        float:left; 
+        background: rgba(52,52,52,0.8);
+        padding: 7px;
+        color:#fff; 
+        font-size: 13px;           
+        font-family: 'Lato';     
+    }
+    .fundo{
+        //background: url(../assets/imgs/ao-vivo-celular-back.jpg) center center #fff;
+    }
+    .card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+    .titulo-card-back{
+        position: absolute;
+        top: 55px;
+        font-size: 25px;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);   
+        font-family: 'Lato';      
+    }
+    .subtitulo-card-back{
+        font-size: 18px;
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);    
+        font-family: 'Lato';  
+    }
+    .titulos-card{
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .titulos-card .titulos-card-chamadas{
+        border-bottom: 2px solid #000;
+    }
+    .titulos-card .titulos-card-titulo-chamadas{
+        color:#000;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Lato';
+    }
+    .titulos-card-titulo{
+        color:#000;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Lato';
+    }  
+    .card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+    .btn-novo{
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-bottom: 3px solid #fff;
+        font-size: 20px;
+        color:#707070;
+        width: 33.33%;
+        float: left;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Lato';     
+        font-size:15px;
+    }
+    .action_evento{
+        color: #216ca9;
+        border-bottom: 3px solid #216ca9;
+
+    }
+    .eventoTitulo{
+        color:#fff;
+        font-size: 22px;
+        font-family: 'Lato';     
+        font-weight: bold;  
+    }
+    .eventoTitulo{
+        color:#fff;
+        font-size: 18px;
+        font-family: 'Lato';       
+    }
+    .card-eventos{
+        position: relative;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }  
+}

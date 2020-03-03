@@ -1,0 +1,166 @@
+page-eventos-foto-ver {
+    .card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+    .btn-novo{
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-bottom: 3px solid #fff;
+        font-size: 20px;
+        color:#fff;
+        width: 50%;
+        float: left;
+        padding: 10px;
+        text-align: center;
+        font-family: 'DINPro-Bold';     
+        font-weight: bold;  
+        font-size:15px;
+    }
+    .action_evento{
+        color: #d5b340;
+        border-bottom: 3px solid #d5b340;
+
+    }
+    .eventoTitulo{
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        color:#d5b340;
+        font-size: 20px;
+        font-family: 'DINPro-light';     
+    }
+    .eventoTexto{
+        color:#fff;
+        font-size: 18px;
+        font-family: 'DINPro-light';       
+    }
+    .card-md{
+        background: transparent;
+    }
+    .card-eventos{
+        position: relative;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .novidades-card{    
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        border-radius:0px;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0); 
+    }
+    .video-card-titulo{
+        color:#fff;
+        font-weight: bold;
+        font-size: 14px;
+        background: transparent;        
+        font-family: 'DINPro-Bold';  
+    }
+    .video-card-desc{
+        color:#d5b340;
+        background: transparent;        
+        font-size: 12px;
+        font-family: 'DINPro-light';    
+    } 
+    .box-novidades{
+        padding:0px; 
+        min-height:180px; 
+        background: transparent;
+        margin-bottom:10px;
+    }    
+    .eventos-seta-img {
+        width:70px;
+        height:39px;
+        margin: 0 auto;
+    }
+    .eventos-icones{
+        width: 26px;
+        height: 25px;
+        margin-left: 5px;
+        margin-top: 3px;
+        float: left; 
+    }
+    .eventos-texto-menor{
+        color: #fff;
+        font-size: 16px;
+        font-family: 'DINPro-light';  
+        padding: 5px;
+        float: left; 
+    }
+    .btn-inscreva-se{
+        margin-top: 23px;
+        width: 100%;
+        color: #d5b340;
+        border-color :#d5b340;
+    }
+    .btn-inscreva-se:hover{
+        border: 1px solid #d5b340;
+        background: #d5b340;
+        color:#000;   
+    }   
+    .btn-inscreva-se:focus{             
+        background: #d5b340;
+        border: 1px solid #d5b340; 
+        color:#000;       
+    }     
+    .btn-inscreva-se:visited{             
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000;       
+    }    
+    .btn-inscreva-se:active{             
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000;       
+    }    
+    .div-lista{
+        margin: 0 auto; 
+        padding:0px; 
+        width: 100%;
+        border:0px;
+    }
+    .lista-valores{
+        margin-top:20px; 
+        padding:0px; 
+        width: 100%;
+        border:0px;
+    }
+    .lista-ion-label{
+        color:#d5b340;
+        font-size: 15px;
+    }
+    .desc p{
+        padding-top: 20px;
+        font-size: 14px;
+        color: #fff;   
+        width: 100%;  
+        font-family: 'DINPro-light';   
+        margin-top:0px;   
+    } 
+    .slide-card-titulo-chamadas{
+        color: #d5b340;   
+        width: 100%;  
+        font-family: 'DINPro-light';  
+    }
+
+}

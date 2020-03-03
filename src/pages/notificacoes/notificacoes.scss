@@ -1,0 +1,30 @@
+page-notificacoes {
+    .novidades-card{    
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        border-bottom: 3px solid #cacaca;  
+        background: transparent;  
+    }
+    .video-card-titulo{
+        color:#d5b340;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'DINPro-Bold';  
+        margin-bottom:15px;
+        background: transparent;
+    }
+    .video-card-desc{
+        color:#fff;
+        font-size: 15px;
+        font-family: 'DINPro-light';  
+        font-weight: 300;  
+        background: transparent; 
+    } 
+    .data_hora_timeline{
+        color:#fff;
+        font-size:11px;
+        font-family: 'DINPro-light';   
+        background: transparent;               
+    }     
+}

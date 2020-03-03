@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle start color="secondary" (click)="menu()">
+    <ion-icon name="menu"></ion-icon>
+  </button>
+      <div class="header_logo" (click)="abrirPaginaHome()">
+          <img src="assets/imgs/logo-small-menu.png">
+      </div>
+      <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+          <img src="assets/imgs/ico-air-play-off.png">
+      </div>
+      <div class="header_users" (click)="abrirPaginaEventos()">
+          <img src="assets/imgs/ico-pessoas-off.png">
+      </div>
+      <div class="header_busca" (click)="abrirPaginaBusca()">
+          <img src="assets/imgs/ico-busca.png">
+      </div>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <ion-card class="novidades-card">
+    <ion-row>
+      <ion-col col-8>
+        <h2 class="btn-novo " (click)="abrirMinhaListaAlbuns()">
+          Áudios
+        </h2>
+        <h2 class="btn-novo action_evento" (click)="abrirMinhaListaAudio()">
+          Músicas
+        </h2> 
+      </ion-col> 
+      <ion-col col-4 text-right>
+        <div class="editar" (click)="AbrirEditarOntoarte()">
+          Editar
+        </div>
+        <div class="editar-img" (click)="AbrirEditarOntoarte()">
+          <img src="assets/imgs/ico-mais.png">
+        </div>           
+      </ion-col>             
+      <ion-col col-12>
+        <ion-card *ngFor="let item of relAudios; let i = index" class="AudiosList">
+          <ng-container *ngIf="item.idaudio != 0">
+            <ion-row>
+                <ion-col col-2>
+                    <img src="{{api2}}/{{item.Pasta}}/{{item.Img}}_400.jpg" width="100%">
+                </ion-col>
+                <ion-col col-10 style="border: 0px;">
+                    <ion-list class="listItem">
+                        <ion-item class="listItem">
+                            <ion-icon (click)="startAudio(item, i)" name="{{item.iconplay}}" item-start></ion-icon>
+                            <h2 class="tituloFaixa" (click)="startAudio(item, i)">{{item.audio}}
+                                <Br>
+                                <span class="subtituloFaixa" (click)="startAudio(item, i)">{{item.artista}}</span>
+                            </h2>
+                        </ion-item>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+          </ng-container>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+</ion-content>
+<ion-footer class="menu_footer" >
+  <ion-grid class="div_player" *ngIf="getIsExecuting()">
+    <ion-row>
+        <ion-col col-12>
+            <!-- <input type="range" min="0" max="{{totalMedia}}" [(ngModel)]="position" (change)="refreshPosition()">  -->
+            <ion-range class="randNedo" min="0" max="{{getTotalMediaPlayer()}}" [(ngModel)]="position" (ionChange)="refreshPosition()">
+            </ion-range>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-1>
+            <img src="assets/imgs/random.png" class="imgControl" (click)="random()">
+        </ion-col>
+        <ion-col col-2 class="player_texto_musica">
+            {{getFormatedCurrentDuration()}}
+        </ion-col>
+        <ion-col col-6 class="player_texto_musica">
+            <marquee direction="left" scrollamount="2">{{audioInfo}} <span class="span_texto">- {{artistaInfo}}</span></marquee>
+        </ion-col>
+        <ion-col col-1>
+            <img src="assets/imgs/back.png" class="imgControl" (click)="back()">
+        </ion-col>
+        <ion-col col-1>
+            <img src="assets/imgs/{{iconPlay}}.png" class="imgControl" (click)="tooglePlay()">
+        </ion-col>
+        <ion-col col-1>
+            <img src="assets/imgs/next.png" class="imgControl" (click)="next()">
+        </ion-col>
+    </ion-row>
+</ion-grid>
+    </ion-footer>

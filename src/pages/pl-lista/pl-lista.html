@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="transparente pantera">
+  
+    <ion-card class="livros-card">
+      <ion-card-content style="margin:0px;">
+            <div class="tituloGrande"><i>{{ item.Titulo }}</i></div>
+            <div class="subtituloGrande"><i>{{ item.Subtitulo }}</i></div>
+            <img src="{{ api }}/{{ item.Caminho }}/{{ item.Pasta }}/{{ item.Img }}_400.jpg" (click)= "selecionado(item)" class="img-capa"/>  
+            <ion-card-title >
+                <p class="detalhes"><strong>{{ item.Data }}</strong>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{{ item.paginas }} páginas</p>
+                <div class="livros-card-btn-ler-mais" (click)= "selecionado(item)">LER</div>
+                <div class="desc" [innerHTML]="item.Descricao"></div>                                  
+            </ion-card-title>              
+      </ion-card-content>   
+      <ion-card-content>
+            <div class="icone-livros-down" (click)="AddMinhaLista(item)">
+                <img src="assets/imgs/{{icone}}.png">
+                <p>Minha Lista</p>
+            </div>
+            <div class="icone-livros-down" (click)="ClassficarPl(item)">
+                <img src="assets/imgs/ico-curtir-pl{{ icoCurtirImg }}.png">
+                <p>{{ icoCurtir }}</p> 
+            </div> 
+            <div class="icone-livros-down" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', imgFinal, '')">
+                <img src="assets/imgs/ico-compartilhar-pl.png">
+                <p>Compartilhar</p>
+            </div>             
+      </ion-card-content>            
+    </ion-card>
+
+    <ion-card class="slide-card"> 
+      <ng-container *ngIf="relVideos?.length > 0">    
+        <ion-card-content>
+          <ion-card-title class="slide-card-chamadas">
+            <h2 class="slide-card-titulo-chamadas">Vídeos de Aprofundamento</h2>
+          </ion-card-title>   
+        </ion-card-content> 
+        <ion-card-content>
+          <ion-slides *ngIf="relVideos && relVideos.length" autoplay="1000" loop="true" slidesPerView="2" infinite="true" parallax="true" speed="6000" pager="false">
+            <ion-slide *ngFor= "let videoVinc of relVideos" class="slide-card-li-video" (click)= "selecionadoVideosVinc(videoVinc)">
+              <div *ngIf="videoVinc.vinculado == item.idvideo">
+                <img src="{{ api }}/{{ videoVinc.Caminho }}/{{ videoVinc.Pasta }}/{{ videoVinc.Img }}_400.jpg">
+                <!--
+                <h3 class="titulo">{{ videoVinc.Titulo }}</h3>
+                -->
+              </div>                            
+            </ion-slide>
+            <ng-container *ngIf="relVideos?.length == 1">
+
+            </ng-container>
+          </ion-slides>
+        </ion-card-content>
+      </ng-container>
+    </ion-card>
+
+    <ion-card class="slide-card" *ngIf="item.Tipo != 'concerto'">
+      <ng-container *ngIf="relMaterias?.length > 0">     
+        <ion-card-content>
+          <ion-card-title class="slide-card-chamadas">
+            <h2 class="slide-card-titulo-chamadas">Matérias Relacionadas</h2>
+          </ion-card-title>   
+        </ion-card-content> 
+        <ion-card-content>
+          <ion-slides autoplay="1000" loop="true" slidesPerView="3" infinite="true" parallax="true" speed="6000" pager="false">
+            <ion-slide *ngFor= "let itemMaterias of relMaterias" class="slide-card-li"  (click)= "selecionadoPlVinc(itemMaterias)" >
+              <img src="{{ api }}/{{ itemMaterias.Caminho }}/{{ itemMaterias.Pasta }}/{{ itemMaterias.Img }}_400.jpg" width="105px" height="167px"/>
+            </ion-slide>
+          </ion-slides>            
+        </ion-card-content>
+      </ng-container> 
+    </ion-card> 
+
+    <ion-card class="slide-card">
+      <ng-container *ngIf="relBooks?.length > 0">  
+        <ion-card-content>
+          <ion-card-title class="slide-card-chamadas">
+            <h2 class="slide-card-titulo-chamadas">Publicações Relacionadas</h2>
+          </ion-card-title>   
+        </ion-card-content> 
+        <ion-card-content>
+          <ion-slides *ngIf="relBooks && relBooks.length" autoplay="1000" loop="true" slidesPerView="3" infinite="true" parallax="true" speed="6000" pager="false">
+            <ion-slide *ngFor= "let itemLivros of relBooks" class="slide-card-li" (click)= "selecionaVinc(itemLivros)" >
+              <img src="{{ api }}/{{ itemLivros.Caminho }}/{{ itemLivros.Pasta }}/{{ itemLivros.Img }}_400.jpg" width="105px" height="167px"/>
+            </ion-slide>
+          </ion-slides>            
+        </ion-card-content>
+      </ng-container>
+    </ion-card> 
+    
+  <Br><Br>
+
+</ion-content> 

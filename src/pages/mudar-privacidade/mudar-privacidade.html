@@ -1,0 +1,36 @@
+<ion-content class="login-content no-scroll">
+  <div class="login-card">
+    <ion-navbar>
+      <button ion-button menuToggle start>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <div class="login-logo">
+        <img src="assets/imgs/slide-intro/logo-intro.png">
+      </div>                
+    </ion-navbar>   
+
+    <div class="login-inputs">
+      
+      <div class="titulo">
+        Política de Privacidade<br>e Termos de uso
+      </div>   
+
+      <ion-scroll scrollY="true" class="scroll-frame">
+        <div *ngFor= "let item of relPrivacidade; let i = index">
+          <h4 class="p_titulo">{{item.Titulo}}</h4>
+          <ion-col col-12 style="margin: 0px; padding: 0px;">
+            <div class="conteudo" >
+              <p [innerHTML]="item.Descricao"></p>
+            </div>
+          </ion-col>
+        </div>
+      </ion-scroll>
+      <!-- ios marca // android desmarca -->
+      <div class="login-btn-outros">
+        <div class="btn" (click)="concordo()">Li e concordo com as Política de privacidade e termo de uso.</div>
+      </div>
+
+    </div>    
+  </div>
+</ion-content>
+  

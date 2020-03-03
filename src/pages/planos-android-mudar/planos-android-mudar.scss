@@ -1,0 +1,102 @@
+page-planos-android-mudar {
+    .login-content{
+      background: url(../assets/imgs/background-app.png) no-repeat center center;
+      background-size: cover;
+    }
+    .login-card{
+      border-radius: 6px;
+      margin: 20px 20px 0px 20px;
+      height: 93%;
+      background: #fff;
+    }
+    .login-logo{
+      max-width: 25px;
+      margin: 0 auto;  
+      margin-top: 3%;      
+    }  
+    .toolbar-background{
+      background: #fff;
+    }
+    .titulo{
+      color: #d5b340;
+      text-align: center;
+      font-weight: bold;
+      font-size: 21px;
+      font-family: 'Lato'; 
+      padding: 20px 10px 10px 10px;       
+    } 
+    .fundo{
+      //background: url(../assets/imgs/background.jpg) no-repeat top center;
+      background-size: cover;
+    }
+    .nedo0{
+      width: 100%;
+      background: url(../assets/imgs/plano_1.jpg) no-repeat top center; background-size: cover; 
+      padding: 20px 10px 20px 10px;
+    }
+    .nedo1{
+      width: 100%;    
+      background: url(../assets/imgs/plano_2.jpg) no-repeat top center; background-size: cover; 
+      padding: 20px 10px 20px 10px;
+    }
+    .caixa{
+      width: 100%;
+      background: rgba(0,0,0,0.3);
+      padding: 0px;
+      border-bottom: 5px solid #fff;
+    }
+    .titulo-plano{
+      color: #fff;
+      text-align: center;
+      //font-weight: bold;
+      font-size: 250%;
+      font-family: 'snell'; 
+      //text-transform: uppercase;
+      padding: 0px;
+      margin: 0px;
+    }
+    .subtitulo-plano{
+      color: #fff;
+      text-align: center;
+      font-family: 'Lato';   
+      font-size: 80%; 
+      padding: 5px 0px 0px 0px;
+      margin: 0px;
+    }
+    .preco-plano{
+      color: #fff;
+      text-align: center;
+      font-family: 'Lato';     
+      padding: 5px 0px 0px 0px;
+      margin: 0px;
+      font-size: 100%;       
+    }
+    .frase_final{
+      color: #858584;
+      text-align: center;
+      font-family: 'Lato'; 
+      font-size: 100%;    
+      margin-top: 2%;
+      font-weight: bold;    
+    }
+    .bt-fecha-modal{
+      position: absolute;
+      top: -3px;
+      width: 10%;
+      color:#000;
+      font-weight: bold;
+      font-size: 15px;
+      font-family: 'Lato'; 
+      text-transform: uppercase; 
+      background: transparent;
+      border: 0px;
+      border-radius: 0px;
+    }
+    .bt-fecha-modal:hover{
+      color:#000;
+      background: transparent;
+      border: 0px;
+      border-radius: 0px;
+    }  
+    
+  } 

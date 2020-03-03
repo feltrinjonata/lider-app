@@ -1,0 +1,224 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div> 
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header> 
+<ion-content class="transparente pantera">
+
+    <ion-refresher (ionRefresh)="doRefresh($event)" style="background:transparent">
+      <ion-refresher-content style="background:transparent"></ion-refresher-content>
+    </ion-refresher>
+
+    <ion-card *ngFor= "let item of relnovidadesPega" class="novidades-card" (ionChange)="checkFocus(item)">
+        <ion-item class="transparente" (click)= "selecionarNovidades(item)" >
+          
+          <img class="avatar" src="assets/imgs/{{ item.Icone }}">
+          
+          <div class="video-card-categoria">
+            {{ item.Categoria }} <Br>
+            <span class="data_hora_timeline">
+              <ion-icon name="ios-clock-outline" style="margin-right:3px;"></ion-icon>
+              {{ item.DataNovidade }}
+            </span>
+        </div>  
+        </ion-item>
+        <ion-card-content (click)= "selecionarNovidades(item)" >
+            <h2 class="video-card-titulo">{{ item.TituloNovidade }}</h2>
+            <div class="video-card-desc" [innerHTML]="item.DescricaoNovidade"></div> 
+        </ion-card-content>
+        <ion-card-content class="box-novidades" (click)= "selecionarNovidades(item)" >
+          <img src="{{ api }}/novidades/{{ item.PastaNovidade }}/{{ item.ImgNovidade }}_400.jpg" />
+        </ion-card-content>
+
+        <div *ngIf="item.Tipo == 'video'">
+
+          <!--
+          <ion-item class="video-play-card">
+              <div class="video-play-card-btn">
+                <img src="assets/imgs/ico-btn-play-red.png">
+              </div>
+              <div class="video-play-card-tempo">{{ item.Tempo }}</div>
+              <div class="video-play-card-views">{{ item.ContCurtir }} Curtidas</div>
+          </ion-item>
+                    <ion-row style="margin: -45px 0px 8px 0px;">
+-->
+            <ion-row style="margin: 5px 0px 5px 0px;">
+              <div class="ico-curtir-img">
+                <img src="assets/imgs/{{ icoCurtirAulas }}" (click)="ClassficarAula(item)">
+              </div>
+              <div class="ico-curtir-m" (click)="ClassficarAula(item)">
+                {{ item.ContCurtir }}
+              </div>
+              <div class="barra-down"></div>
+              <div class="ico-comentarios-img">
+                <img src="assets/imgs/ico-comentarios-m.png" (click)="abrirComentarios(item.idvideo, 'videos')">
+              </div>
+              <div class="ico-comentarios-m" (click)="abrirComentarios(item.idvideo, 'videos')">
+                {{ item.ContComentarios }}
+              </div>
+              <div class="barra-down"></div> 
+              <div class="ico-compartilhar-img">
+                <img src="assets/imgs/ico-compartilhar-novi.png" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', '', '')">
+              </div>
+              <div class="ico-compartilhar-m" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', '', '')">
+                
+              </div>
+            </ion-row>           
+        </div>
+
+        <div *ngIf="item.Tipo == 'pl'">
+          <ion-row style="margin: 5px 0px 5px 0px;"> 
+            <div class="ico-curtir-img">
+                <img src="assets/imgs/{{ icoCurtirPl }}" (click)="ClassficarPl(item)">
+            </div>
+            <div class="ico-curtir-m" (click)="ClassficarPl(item)">
+              {{ item.ContCurtir }}
+            </div>
+            <div class="barra-down"></div>
+            <div class="ico-comentarios-img">
+              <img src="assets/imgs/ico-comentarios-m.png" (click)="abrirComentarios(item.idpl, 'pl')">
+            </div>
+            <div class="ico-comentarios-m" (click)="abrirComentarios(item.idpl, 'pl')">
+              {{ item.ContComentarios }}
+            </div>
+            <div class="barra-down"></div> 
+            <div class="ico-compartilhar-img">
+              <img src="assets/imgs/ico-compartilhar-novi.png" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', '', '')">
+            </div>
+            <div class="ico-compartilhar-m" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', '', '')">
+              
+            </div>
+          </ion-row>          
+        </div>
+          
+        <div *ngIf="item.Tipo == 'livros'">
+          <ion-row style="margin: 5px 0px 5px 0px;">
+            <div class="ico-curtir-img">
+                <img src="assets/imgs/{{ icoCurtirLivros }}" (click)="ClassficarLivro(item)">
+            </div>
+            <div class="ico-curtir-m" (click)="ClassficarLivro(item)">
+              {{ item.ContCurtir }}
+            </div>
+            <div class="barra-down"></div>
+            <div class="ico-comentarios-img">
+              <img src="assets/imgs/ico-comentarios-m.png" (click)="abrirComentarios(item.idlivro, 'livros')">
+            </div>
+            <div class="ico-comentarios-m" (click)="abrirComentarios(item.idlivro, 'livros')">
+              {{ item.ContComentarios }}
+            </div>
+            <div class="barra-down"></div> 
+            <div class="ico-compartilhar-img">
+              <img src="assets/imgs/ico-compartilhar-novi.png" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', '', '')">
+            </div>
+            <div class="ico-compartilhar-m" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', '', '')">
+              
+            </div>
+          </ion-row>
+        </div>
+        
+        <div *ngIf="item.Tipo == 'musica'">
+          <ion-row style="margin: 5px 0px 5px 0px;">
+            <div class="ico-curtir-img">
+              <img src="assets/imgs/{{ icoCurtirMusicas }}" (click)="ClassficarAlbum(item)">
+            </div>
+            <div class="ico-curtir-m" (click)="ClassficarAlbum(item)">
+              {{ item.ContCurtir }}
+            </div>
+            <div class="barra-down"></div>
+            <div class="ico-comentarios-img">
+              <img src="assets/imgs/ico-comentarios-m.png" (click)="abrirComentarios(item.idalbum, 'musica')">
+            </div>
+            <div class="ico-comentarios-m" (click)="abrirComentarios(item.idalbum, 'musica')">
+              {{ item.ContComentarios }}
+            </div>
+            <div class="barra-down"></div> 
+            <div class="ico-compartilhar-img">
+              <img src="assets/imgs/ico-compartilhar-novi.png" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', '', '')">
+            </div>
+            <div class="ico-compartilhar-m" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', '', '')">
+              
+            </div>
+          </ion-row>           
+        </div>
+
+    </ion-card>  
+
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content loadingSpinner="bubbles" >
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+</ion-content>
+<ion-footer class="menu_footer"> 
+  <div class="ico-menu-footer"> 
+    <ng-container *ngIf="qtdePublicacoes > 0">
+      <ion-badge item-end color="danger" class="menu-footer-bola">{{qtdePublicacoes}}</ion-badge>
+    </ng-container>
+    <img src="assets/imgs/ico-menu-footer-novidades-s.png" (click)="abrirPaginaHome()">  
+    <p class="menu_footer_texto menu_footer_texto_novidades" (click)="abrirPaginaHome()">
+      Novidades
+    </p>
+  </div>
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-pl.png" (click)="abrirPaginaPl()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaPl()">
+      Matérias
+    </p>          
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-loja-menu-revista.png" (click)="abrirPaginaPublicacoes()">     
+    <p class="menu_footer_texto" (click)="abrirPaginaPublicacoes()">
+      Publicações
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-aulas.png" (click)="abrirPaginaTitulos()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaTitulos()">
+      Vídeos
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-podcast.png" (click)="abrirPaginaOntoarte()">  
+    <p class="menu_footer_texto" (click)="abrirPaginaOntoarte()">
+      Áudios
+    </p>          
+  </div>       
+</ion-footer>

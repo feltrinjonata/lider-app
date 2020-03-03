@@ -1,0 +1,20 @@
+
+<ion-content class="transparente pantera" style="padding:50px;">
+    <ion-card class="card-back">
+        <img src="assets/imgs/background-dicio.jpg" />  
+        <div class="titulo-card-back">Dicionário</div>
+    </ion-card>
+
+      <button (click)="fecharModal()" class="botao-retorna">Retornar à leitura</button>
+      
+      <ion-searchbar class="busca-input" placeholder="Digite a palavra..." (ionInput)="filterTechnologies($event.target.value)"></ion-searchbar>
+  
+      <ion-card *ngFor="let technology of technologies" (click)= "selecionado(technology)" class="novidades-card">
+          <ion-card-content>
+              <h2 class="video-card-titulo">
+                  {{ technology.palavra }}
+              </h2>
+          </ion-card-content>
+      </ion-card>
+        
+    </ion-content>

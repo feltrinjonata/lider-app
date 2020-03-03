@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header> 
+
+<ion-content class="transparente pantera"> 
+  
+  <ion-card class="card-back">
+    <img src="assets/imgs/background-header.jpg" />  
+    <div class="titulo-card-back">
+      <h1>Vídeos</h1>
+    </div>
+  </ion-card>
+  <ion-card class="slide-card">
+        <ion-card-content>
+
+            <ion-row *ngFor= "let itemCat of relVideosCats">
+              <ng-container *ngIf="itemCat.TotalItens != 0">
+                <ion-card-title class="slide-card-chamadas">
+                  <h2 class="slide-card-titulo-chamadas">{{ itemCat.Categoria }}</h2>
+                </ion-card-title>   
+                <ion-col col12>
+
+                    <ion-slides autoplay="1000" loop="true" slidesPerView="1" infinite="true" parallax="true" speed="6000" pager="false">
+                        <ng-container *ngFor= "let item of relVideos">
+                            <ion-slide *ngIf="itemCat.idvideo_cat == item.Cat" class="slide-card-li">
+                                <img (click)= "selecionado(item)" src="{{ api }}/{{ item.Pasta }}/{{ item.Img }}_400.jpg"/>
+                                <!--
+                                <h3 class="titulo">{{ item.Titulo }}</h3>
+                                <p class="subtitulo">{{ item.Subtitulo }}</p> 
+                                -->                                 
+                            </ion-slide>
+                        </ng-container>
+                    </ion-slides>  
+
+                </ion-col>
+              </ng-container> 
+            </ion-row> 
+
+    </ion-card-content> 
+  </ion-card>   
+</ion-content>
+<ion-footer class="menu_footer">
+  <div class="ico-menu-footer"> 
+    <ng-container *ngIf="qtdePublicacoes > 0">
+      <ion-badge item-end color="danger" class="menu-footer-bola">{{qtdePublicacoes}}</ion-badge>
+    </ng-container>
+    <img src="assets/imgs/ico-menu-footer-novidades.png" (click)="abrirPaginaHome()">  
+    <p class="menu_footer_texto" (click)="abrirPaginaHome()">
+      Novidades
+    </p>
+  </div>
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-pl.png" (click)="abrirPaginaPl()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaPl()">
+      Matérias
+    </p>          
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-loja-menu-revista.png" (click)="abrirPaginaPublicacoes()">     
+    <p class="menu_footer_texto" (click)="abrirPaginaPublicacoes()">
+      Publicações
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-aulas-s.png" (click)="abrirPaginaTitulos()">   
+    <p class="menu_footer_texto menu_footer_texto_novidades" (click)="abrirPaginaTitulos()">
+      Vídeos
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-podcast.png" (click)="abrirPaginaOntoarte()">  
+    <p class="menu_footer_texto" (click)="abrirPaginaOntoarte()">
+      Áudios
+    </p>          
+  </div>       
+</ion-footer>

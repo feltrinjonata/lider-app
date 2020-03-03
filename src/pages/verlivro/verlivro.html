@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="transparente pantera">  
+  <div class="box-icone-dicionario" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', imgFinal, '')">
+    <img src="assets/imgs/ico-compartilhar-m.jpg">
+  </div>
+  <iframe *ngIf="pdfLink" [src]="pdfLink" width="100%" height="100%" frameborder="0" ></iframe>
+</ion-content>
+<!--
+<ion-content class="transparente pantera">  
+  <div class="box-icone-dicionario" (click)="abrirModalDicio()">
+    <img src="assets/imgs/ico-dicionario.jpg">
+    <p>Dicionário</p>
+  </div>
+  <iframe *ngIf="pdfLink" [src]="pdfLink" width="100%" height="100%" frameborder="0" ></iframe>
+</ion-content>
+-->

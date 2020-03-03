@@ -1,0 +1,228 @@
+page-eventos-form {
+    .novidades-card{    
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        border-radius:0px;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0); 
+    }
+    .box-novidades{
+        padding:0px; 
+        min-height:180px; 
+        background: url(../assets/imgs/box.jpg) center center repeat;
+        margin-bottom:10px;
+    }    
+
+    .form-inputs{
+      margin:0;
+      padding: 0px 10px 20px 5px;
+    }
+    .form-texto{
+      color:#d5b340;
+      font-size: 15px;
+    }
+    .btn-inscreva-se{
+      margin-top: 13px;
+      width: 100%;
+      color: #d5b340;
+      border-color :#d5b340;
+  }
+  .btn-inscreva-se:hover{
+      border: 1px solid #d5b340;
+      background: #d5b340;
+      color:#000;   
+  }   
+  .btn-inscreva-se:focus{             
+      background: #d5b340;
+      border: 1px solid #d5b340; 
+      color:#000;       
+  }     
+  .btn-inscreva-se:visited{             
+      background: #d5b340;
+      border: 1px solid #d5b340;
+      color:#000;       
+  }    
+  .btn-inscreva-se:active{             
+      background: #d5b340;
+      border: 1px solid #d5b340;
+      color:#000;       
+  } 
+ .login-content{
+    background: url(../assets/imgs/background-app.png) no-repeat center center;
+    background-size: cover;
+  }
+  .login-card{
+    border-radius: 6px;
+    margin: 20px;
+    height: 93%;
+    background: #fff;
+  }
+  .toolbar-background{
+    background: transparent;
+  }
+  .titulo{
+    color: #d5b340;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Lato';  
+  } 
+  .fundo{
+    padding: 10px;
+  }
+  .caixa{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #d5b340;
+    border-radius:10px;
+  }
+  .caixa-input-link{
+    border:0px;
+    border-bottom: 1px solid #d5b340;
+    padding: 0px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato';     
+  }   
+  .caixa-input{
+    border:0px;
+    border-bottom: 1px solid #d5b340;
+    padding: 0px;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Lato';     
+  }  
+  .caixa-input:hover{
+    color:#d5b340;
+    border-bottom: 1px solid #d5b340;
+    background: #fdfdfd;
+  }    
+  .titulo-entrega{
+    color: #d5b340;
+    font-size: 16px;
+    font-family: 'Lato'; 
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+  }
+  .subtitulo-entrega{
+    color: #d5b340;
+    text-align: center;
+    font-family: 'Lato';     
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+  }
+  .login-btn-entrar{
+    width: 100%;
+    text-align: center;
+  }
+  .login-btn-entrar-button{
+    border: 1px solid #d5b340;
+    border-radius: 8px;
+    background:transparent;
+    padding: 10px;
+    color:#d5b340;
+    width: 100%;
+    margin-top: 25px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);     
+  }  
+  .bt-fecha-modal{
+    position: absolute;
+    top: -3px;
+    width: 10%;
+    color:#fff;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Lato'; 
+    text-transform: uppercase; 
+    background: transparent;
+    border: 0px;
+    border-radius: 0px;
+  }
+  .bt-fecha-modal:hover{
+    color:#fff;
+    background: transparent;
+    border: 0px;
+    border-radius: 0px;
+  }   
+  .caixa-user{
+    border: 0px;
+    border-bottom: 1px solid #d5b340;
+  }
+  .caixa-user span{
+    color:#fff;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Lato'; 
+    text-transform: uppercase; 
+  }  
+  .caixa-links{
+    border-bottom: 1px solid #d5b340;
+    color:#fff;
+    font-size: 15px;
+    font-family: 'Lato'; 
+    padding: 9px 0px 10px 0px;
+  }
+  .tituloPerfil{
+    color:#fff;
+    font-weight: bold;
+    font-family: 'Lato';  
+    margin: 0px;
+    padding: 0px;
+  }  
+  .tituloEntrega{
+    color:#fff;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Lato';  
+    margin: 0px; 
+    padding: 0px;
+    padding-bottom: 15px;
+  }
+  .textoEntrega{
+    color:#fff;
+    font-size: 13px;
+    font-family: 'Lato';    
+    margin-bottom: 20px;
+  }   
+  .list{
+    background:transparent;
+  } 
+  .list .item-radio {
+    color: #fff;
+  } 
+  .item-radio-checked.item-ios ion-label{
+    border-color: #d5b340;
+    color: #d5b340;
+  }
+  .radio-ios .radio-checked .radio-inner{
+    border-color: #d5b340;
+    color: #d5b340;
+  }   
+  .list .item-radio .radio-icon {
+    background:transparent;
+  }  
+  .input-btn{
+    border-bottom: 1px solid #fff;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Lato';
+    width: 100%;
+    padding: 5px;
+    background: transparent;
+    border-radius: 2px;
+  }
+  .input-btn:hover{
+    color:#d5b340;
+    border-bottom: 1px solid #d5b340;
+    background: transparent;
+  }   
+   
+}

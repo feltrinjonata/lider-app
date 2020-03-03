@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-col col-12>
+      <p>
+        <strong>Em breve você poderá comprar os livros pelo seu Líder.</strong>
+        <Br><Br>
+        Conheça os nossos produtos em <a (click)="openUrl()">www.ontopsicologia.com.br</a>.
+      </p>
+      <!--
+      <video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player" width="100%"> 
+        <source src="assets/imgs/video.mp4" type="video/mp4">
+        <track kind="captions" label="Português" srclang="pt-br" src="assets/imgs/legenda.vtt" default>
+        <track kind="captions" label="English" srclang="en" src="assets/imgs/legenda.vtt">
+        <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+    </video>
+    <video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player" width="100%"> 
+      <source src="assets/imgs/video.mp4" type="video/mp4" size="576">
+      <source src="assets/imgs/video.mp4" type="video/mp4" size="720">
+      <source src="assets/imgs/video.mp4" type="video/mp4" size="1080">ionic
+        <track kind="captions" label="Português" srclang="pt-br" src="assets/imgs/legenda.vtt" default>
+          <track kind="captions" label="English" srclang="en" src="assets/imgs/legenda.vtt">
+      <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+  </video>    
+    <video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player" width="100%"> 
+      <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
+      <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+      <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
+        <track kind="captions" label="Português" srclang="pt-br" src="assets/imgs/legenda.vtt" default>
+          <track kind="captions" label="English" srclang="en" src="assets/imgs/legenda.vtt">
+      <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+  </video>
+  -->
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer class="menu_footer">
+  <div class="ico-menu-footer"> 
+    <ng-container *ngIf="qtdePublicacoes > 0">
+      <ion-badge item-end color="danger" class="menu-footer-bola">{{qtdePublicacoes}}</ion-badge>
+    </ng-container>
+    <img src="assets/imgs/ico-menu-footer-novidades.png" (click)="abrirPaginaHome()">  
+    <p class="menu_footer_texto" (click)="abrirPaginaHome()">
+      Novidades
+    </p>
+  </div>
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-pl.png" (click)="abrirPaginaPl()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaPl()">
+      Matérias
+    </p>          
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-loja-menu-revista.png" (click)="abrirPaginaPublicacoes()">     
+    <p class="menu_footer_texto" (click)="abrirPaginaPublicacoes()">
+      Publicações
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-aulas.png" (click)="abrirPaginaTitulos()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaTitulos()">
+      Vídeos
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-podcast.png" (click)="abrirPaginaOntoarte()">  
+    <p class="menu_footer_texto" (click)="abrirPaginaOntoarte()">
+      Áudios
+    </p>          
+  </div>       
+</ion-footer>

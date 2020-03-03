@@ -1,0 +1,29 @@
+<ion-content class="login-content no-scroll">
+  <div class="login-card">
+    <ion-navbar hideBackButton="true">
+      <div class="login-logo">
+        <img src="assets/imgs/slide-intro/logo-intro.png">
+      </div>          
+      <div class="titulo">
+        Escolha um Plano para assinar
+      </div>        
+    </ion-navbar>     
+    <div class="fundo">
+
+      <div class="caixa" *ngFor="let plano of relPlanos; let i = index">
+
+        <div (click)="selecionarPlano(plano)">
+          <div class="nedo{{i}}">
+            <h1 class="titulo-plano">{{plano.Titulo}}</h1>
+            <p class="subtitulo-plano">{{plano.Subtitulo}}</p>
+            <p class="preco-plano">{{plano.ValorEscrito}}</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>
+</ion-content>
+  

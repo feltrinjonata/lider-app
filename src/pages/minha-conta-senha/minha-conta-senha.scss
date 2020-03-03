@@ -1,0 +1,87 @@
+page-minha-conta-senha {
+  .login-content{
+    background: url(../assets/imgs/background-app.png) no-repeat center center;
+    background-size: cover;
+  }
+  .login-card{
+    border-radius: 6px;
+    margin: 20px;
+    height: 93%;
+    background: transparent;
+  }
+
+  .titulo{ 
+    color: #d5b340;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Lato';  
+  } 
+  .fundo{
+    padding: 10px;
+  }
+  .caixa{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #d5b340;
+    border-radius:10px;
+  }
+  .caixa-input-link{
+    border:0px;
+    border-bottom: 1px solid #d5b340;
+    padding: 0px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato';     
+  }   
+  .caixa-input{
+    border:0px;
+    border-bottom: 1px solid #d5b340;
+    padding: 0px;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Lato';     
+  }  
+  .caixa-input:hover{
+    color:#d5b340;
+    border-bottom: 1px solid #d5b340;
+    background: transparent;
+  }    
+  .titulo-entrega{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Lato'; 
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+  }
+  .subtitulo-entrega{
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato';     
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+  }
+  .login-btn-entrar{
+    width: 100%;
+    text-align: center;
+  }
+  .login-btn-entrar-button{
+    border: 1px solid #d5b340;
+    border-radius: 25px;
+    background: transparent;
+    font-family: 'DINPro-Bold';
+    padding: 10px;
+    color:#d5b340;
+    width: 100%;
+    margin-top: 25px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);     
+  }  
+  .login-btn-entrar-button:hover{
+    background: transparent;   
+  }  
+}

@@ -1,0 +1,156 @@
+page-minha-conta2 {
+  .login-content{
+    background: url(../assets/imgs/background-app.png) no-repeat center center;
+    background-size: cover;
+  }
+  .login-card{
+    border-radius: 6px;
+    margin: 20px;
+    height: 93%;
+    background: transparent;
+  }
+
+  .titulo{
+    color: #d5b340;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Lato';  
+    background: transparent; 
+  } 
+  .fundo{
+    padding: 10px;
+    background: transparent;
+  }
+  .caixa{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #d5b340;
+    border-radius:10px;
+    background: transparent;
+  }
+  .caixa-input-link{
+    border:0px;
+    border-bottom: 1px solid #d5b340;
+    padding: 0px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato';  
+
+  }   
+  .caixa-input{
+    border:0px;
+    border-bottom: 1px solid #d5b340;
+    padding: 0px;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Lato';     
+  }  
+  .caixa-input:hover{
+    color:#d5b340;
+    border-bottom: 1px solid #d5b340;
+    background: #d5b340;
+  }    
+  .titulo-entrega{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Lato'; 
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+  }
+  .subtitulo-entrega{
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato';     
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+  }
+  .login-btn-entrar{
+    width: 100%;
+    text-align: center;
+  }
+  .login-btn-entrar-button{
+    border: 1px solid #d5b340;
+    border-radius: 8px;
+    background: #fff;
+    padding: 10px;
+    color:#d5b340;
+    width: 100%;
+    margin-top: 25px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);     
+  }  
+  .bt-fecha-modal{
+    position: absolute;
+    top: -3px;
+    width: 10%;
+    color:#fff;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Lato'; 
+    text-transform: uppercase; 
+    background: transparent;
+    border: 0px;
+    border-radius: 0px;
+  }
+  .bt-fecha-modal:hover{
+    color:#fff;
+    background: transparent;
+    border: 0px;
+    border-radius: 0px;
+  }   
+  .caixa-user{
+    border: 0px;
+    border-bottom: 1px solid #d5b340;
+    background: transparent;
+  }
+  .caixa-links{
+    border-bottom: 1px solid #d5b340;
+    background: transparent;
+    color:#fff;
+    font-size: 15px;
+    font-family: 'Lato'; 
+    padding: 9px 0px 10px 0px;
+  }  
+  .caixa-user2{
+    border: 0px;
+    background: transparent;
+    padding-bottom: 10px;
+  }  
+  .caixa-links2{
+    border-top: 1px solid #d5b340;
+    border-bottom: 1px solid #d5b340;
+    color:#fff;
+    font-size: 15px;
+    font-family: 'Lato'; 
+    padding: 9px 0px 10px 0px;
+  }  
+
+  .tituloPerfil{
+    color:#fff;
+    font-weight: bold;
+    font-family: 'Lato';  
+    margin: 0px;
+    padding: 0px;
+  }  
+  .tituloEntrega{
+    color:#fff;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Lato';  
+    margin: 0px; 
+    padding: 0px;
+    padding-bottom: 15px;
+  }
+  .textoEntrega{
+    color:#fff;
+    font-size: 13px;
+    font-family: 'Lato';    
+    margin-bottom: 20px;
+  }
+
+}

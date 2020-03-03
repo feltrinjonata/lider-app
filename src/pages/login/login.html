@@ -1,0 +1,22 @@
+<ion-content class="login-content no-scroll" >
+  <div class="login-card">
+    <div class="login-logo">
+        <img src="assets/imgs/logo.png"> 
+    </div>    
+    <div class="login-inputs">
+      <!--- value="{{QualEmail}}" -->
+      <ion-input class="input-btn" value="" type="email" placeholder="Digite seu e-mail" name="Email" [(ngModel)]="model.email" required ></ion-input>
+      <ion-input class="input-btn" value="" type="password" placeholder="Digite sua senha" name="password" [(ngModel)]="model.password" required ></ion-input>
+    </div> 
+    <p class="login-texto" (click)="esqueceuSenha()">
+      Esqueceu a senha?
+    </p>
+    <p class="login-texto" (click)="cadastroUser()" style="text-align: right;">
+      Cadastre-se agora
+    </p>
+  </div>
+  <div class="login-btn-entrar">
+    <!--[disabled]="!isenabled" -->
+    <button ion-button (click)="login()" class="login-btn-entrar-button">Entrar</button>    
+  </div>
+</ion-content>

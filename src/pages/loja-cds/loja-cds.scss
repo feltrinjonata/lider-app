@@ -1,0 +1,99 @@
+page-loja-cds {
+    .texto_selecionado{
+        color:#226ca9; 
+    }
+    .slide-card{
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .slide-card .slide-card-chamadas{
+        border-bottom: 2px solid #2a72ac;
+    }
+    .slide-card .slide-card-titulo-chamadas{
+        color:#000;
+        font-size: 20px;
+    }
+    .slide-card .titulos-card-titulo{
+        color:#000;
+        font-weight: bold;
+        font-size: 20px;
+    
+    }   
+    .slide-card .slide-card-li{
+        max-width: 33%;
+        padding: 4px; 
+    }      
+    .card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+    
+    .titulo-card-back{
+        position: absolute;
+        top: 40%;
+        font-size: 30px;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        font-family: 'Lato';        
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);   
+        text-transform: uppercase
+    }  
+    
+    .subtitulo-card-back{
+        font-size: 18px;
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);      
+    }
+
+    .livro-h3{
+        text-align: center;
+        padding: 10px 0px 10px 0px; 
+        color: #4b4b4b;
+        font-size: 13px;  
+        font-weight: bold;
+        font-family: 'Lato';  
+    }
+    .livro-p{
+        text-align: center;
+        font-size: 13px;
+        color: #0bc20f; 
+        font-family: 'Lato';  
+        padding: 5px 0px 5px 15px;
+        border:1px solid #b7b7b7;
+        border-radius: 30px;
+        width: 110px;
+        background: url(../assets/imgs/loja-ico-preco.png) left center no-repeat;
+    }
+    .caixa-itens{
+        margin-bottom: 10px;
+    }
+    .header_carrinho{
+        position: absolute;
+        min-width: 30px;  
+        right:10px;
+        font-size: 26px;
+        margin-top:-15px;   
+        color: #a39fa0;
+        font-weight: bold;
+    }
+}

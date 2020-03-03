@@ -1,0 +1,488 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(../assets/fonts/Lato-Regular.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(../assets/fonts/Lato-Regular.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Lato-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Light'), local('Lato-Light'), url(../assets/fonts/Lato-Lig.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Lato-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Light'), local('Lato-Light'), url(../assets/fonts/Lato-Lig.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Lato-bold';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Bold'), local('Lato-Bold'), url(../assets/fonts/Lato-Bold.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+/* latin */
+@font-face {
+    font-family: 'Lato-bold';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Bold'), local('Lato-Bold'), url(../assets/fonts/Lato-Bold.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+ 
+  @font-face {
+    font-family: 'BodoniBkBTBook';
+    font-style: normal;
+    font-weight: 400;
+    src: local('BodoniBkBTBook'), local('BodoniBkBTBook'), url(../assets/fonts/BodoniBkBTBook.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'DINPro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DINPro'), local('DINPro'), url(../assets/fonts/DINPro-Regular.woff2) format('woff2');
+  }  
+  @font-face {
+    font-family: 'DINPro-light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DINPro-light'), local('DINPro-Light'), url(../assets/fonts/DINPro-Light.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'DINPro-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DINPro-Bold'), local('DINPro-Bold'), url(../assets/fonts/DINPro-Bold.woff2) format('woff2');
+  }  
+  @font-face {
+    font-family: 'DINPro-Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DINPro-Medium'), local('DINPro-Medium'), url(../assets/fonts/DINPro-Medium.woff2) format('woff2');
+  }  
+
+  @font-face {
+    font-family: 'snell';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Snell Roundhand'), local('snell'), url(../assets/fonts/snell.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'NeoGreek';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NeoGreek'), local('NeoGreek'), url(../assets/fonts/NeoGreek.woff2) format('woff2');
+  }   
+  big{
+    font-family: "NeoGreek";
+  }
+
+.no-scroll .scroll-content{ overflow: hidden; }
+.no-scroll-x .scroll-content-x{ overflow-x: hidden; }
+.no-scroll-y .scroll-content-y{ overflow-y: hidden; }
+
+body{
+    background: url(../assets/imgs/background-app.png) no-repeat center center #0a0a0a;
+    background-size: cover;
+    width: 100%;
+}
+ion-app.md [padding] {
+    padding: 0px;
+    background: url(../assets/imgs/background-app.png) no-repeat center center #0a0a0a;
+    background-size: cover;
+}
+.transparente{
+    background: transparent;
+}
+.toolbar-background {
+    background-color: transparent;
+}
+.pantera{
+    background: url(../assets/imgs/background-app.png) no-repeat center center #0a0a0a;
+    background-size: cover;
+    width: 100%;
+}
+/* menu side menu*/
+.side-menu-novo{
+    margin: 0px;
+}
+.side-menu-novo button .item-inner{
+    font-size: 17px;
+    margin-right: 15px;    
+}
+.side-menu-card{
+    border: 0px;
+    width: 100%;
+    margin: 0px;
+    border-bottom: 3px solid #f7f7f7;
+}
+.side-menu-card h2{
+    font-weight: bold;
+    font-family: 'Lato';     
+}
+.side-menu-card i{
+    font-size: 11px;
+    color:#000000;
+    font-family: 'Lato';     
+}
+.side-menu-footer .footer {
+    border:0px;    
+    margin: 0px;
+    padding:0px;
+}
+.side-menu-footer-novo{
+    margin: 0px;
+    border:0px;
+}
+.side-menu-footer-novo .input-wrapper{
+    font-size: 17px;
+    margin-right: 15px;   
+    margin: 0px;
+    border:0px;
+    font-family: 'Lato';     
+}
+/* menu superior */
+.bar-button {
+    left:0px;
+    margin-top:1px; 
+    position: absolute;
+    content: "";
+}
+.toolbar{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: #000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    border-bottom: 2px solid #000; 
+}
+.header_busca{
+    position: absolute;
+    width: 24px;
+    left:45px;
+    margin-top:-12px;       
+}
+.header_busca img{
+    max-height: 24px;
+}
+.header_logo{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top:-11px;   
+    text-align: center; 
+}
+.header_logo img{
+    max-height: 24px;
+    margin-left:0.5px;
+}
+.header_aovivo{
+    position: absolute;
+    width: 25px;
+    right:50px;
+    margin-top:-12px;    
+}
+.header_aovivo img{
+    max-height: 25px;
+}
+.header_users{
+    position: absolute;
+    min-width: 25px;  
+    right:13px;
+    margin-top:-13px;   
+}
+.header_users img{
+    max-height: 25px;
+}
+
+/* menu footer */
+.menu_footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 6px 5px 0px 5px;
+    -webkit-box-shadow: 0px -4px 10px -4px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px -4px 10px -4px rgba(0,0,0,0.19);
+    box-shadow: 0px -4px 10px -4px rgba(0,0,0,0.19);
+    background:#0a0a0a;
+} 
+.menu_footer_texto{
+    border:0px;    
+    margin: 0px;
+    padding:0px;
+    font-weight: bold;   
+    font-family: 'Lato-Light';  
+    color: #bfbcbc;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+.menu_footer_texto_novidades{
+    color:#b89941;
+}
+.menu_footer_texto_livros{
+    color:#b89941;
+}
+.menu_footer_texto_pl{
+    color:#b89941;
+}
+.menu_footer_texto_aulas{
+    color:#b89941;
+}
+.menu_footer_texto_ontoarte{
+    color:#b89941;
+}
+.ico-menu-footer{
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding:0px;
+    margin:0px;
+}
+.ico-menu-footer img{
+    width: 23px;
+}
+// android 
+
+.bar-button{
+    left:-2px;
+}
+// ios
+/*
+r-button{
+    left:10px;
+}
+.bar-buttons{
+    left: 0px;
+}
+*/
+.menu-footer-bola{
+    position: absolute;
+    border-radius: 200px;
+    left: 12%;
+    padding: 2px 5px 2px 5px;
+    top: 5px;
+    font-size: 12px;
+}
+.menu-loja-bola{
+    position: absolute;
+    border-radius: 200px;
+    right: -10%;
+    padding: 2px 5px 2px 5px;
+    top: -2px;
+    font-size: 12px;
+}
+/* slides */
+.slide-capas-videos{
+    float:left; 
+    width:50%;
+    padding: 3px;
+}
+.slide-capas-videos .titulo{
+    color:#90908e;
+    padding-top:10px;
+    font-size: 15px;    
+}
+.slide-capas-videos .subtitulo{
+    color:#90908e;    
+    font-size: 11px;
+    padding-top: -20px;
+}
+.slide-capas{
+    float:left; 
+    width:25%;
+    padding: 3px;
+}
+.slide-capas-3{
+    float:left; 
+    width:33%;
+    padding: 3px;
+}
+
+/* gerais */
+.ml5{
+    margin-left: 5px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.ml20{
+    margin-left: 20px;
+}
+.ml30{
+    margin-left: 30px;
+}
+.ml40{
+    margin-left: 40px;
+}
+.ml50{
+    margin-left: 50px;
+}
+.mr5{
+    margin-right: 5px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.mr20{
+    margin-right: 20px;
+}
+.mr30{
+    margin-right: 30px;
+}
+.mr40{
+    margin-right: 40px;
+}
+.mr50{
+    margin-right: 50px;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mt40{
+    margin-top: 40px;
+}
+.mt50{
+    margin-top: 50px;
+}
+.mb5{
+    margin-bottom: 5px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb30{
+    margin-bottom: 30px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
+.mb50{
+    margin-bottom: 50px;
+}
+.pt10{
+    padding-top: 10px;
+}
+.pt20{
+    padding-top: 20px;
+}
+.pt30{
+    padding-top: 30px;
+}
+.pt40{
+    padding-top: 40px;
+}
+.pt50{
+    padding-top: 50px;
+}
+.pb10{
+    padding-bottom: 10px;
+}
+.pb20{
+    padding-bottom: 20px;
+}
+.pb30{
+    padding-bottom: 30px;
+}
+.pb40{
+    padding-bottom: 40px;
+}
+.pb50{
+    padding-bottom: 50px;
+}
+.ico-curtir-m{
+   font-size: 16px;
+   padding-top:10px;
+   color:#c0c0c0; 
+   font-weight: bold;         
+   font-family: 'Lato'; 
+}
+.ico-comentarios-m{
+    font-size: 16px;
+    padding-top:10px;
+    color:#c0c0c0; 
+    font-weight: bold;         
+    font-family: 'Lato'; 
+ }
+ .ico-compartilhar-m{
+    font-size: 16px;
+    padding-top:10px;
+    color:#c0c0c0; 
+    font-weight: bold;         
+    font-family: 'Lato'; 
+ }
+
+ .menu-icone-lado{
+    max-width: 18px;
+    float:left;
+ }
+
+ .back-button{
+    background: transparent;
+    color:#b6b6b6;
+ }
+
+ .alert-ios .alert-button{
+    color:#e2b431;
+ }
+ .content{
+    background: url(../assets/imgs/background-app.png) no-repeat center center #0a0a0a;
+    background-size: cover;
+    width: 100%;
+ }
+ .fixed-content{
+    background: transparent;
+ }
+ .side-menu-card{
+    background: transparent;
+    border:0px;
+ }
+ .pane, .menu, .view, .list, .item       {
+    background: transparent;
+}
+.menu-lider{
+    color:#fff;
+    background: transparent;
+}
+.side-menu-card h2{
+    color:#d5b340;    
+}
+.side-menu-card i{
+    color:#d5b340;    
+}
+
+.side-menu-novo .item-inner .input-wrapper {
+    color:#fff;    
+}
+
+.side-menu-footer  .item-inner .input-wrapper {
+    color:#fff;    
+}

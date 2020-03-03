@@ -1,0 +1,146 @@
+page-carrinho {
+    .editar{
+        position: absolute;
+        max-width: 60px;  
+        right:30px;
+        margin-top:-20px;   
+        font-size: 15px;
+        color:#d5b340;
+    }
+    .editar-img{
+        position: absolute;
+        max-width: 20px;  
+        right:5px;
+        margin-top:-22px;  
+    }
+    .meu-progeto-titulo{
+        color:#aaa7a7;
+        text-align: center;
+        font-size: 18px;  
+        font-family: 'Lato';    
+        border: 0px;
+        width: 100%;
+        margin: 0px;      
+    }
+    .novidades-card{    
+        border: 0px;
+        width: 100%;
+        margin:0px;
+        background: #fff;
+        padding: 10px;
+        border-bottom: 10px solid #f1ecf2;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);    
+    }
+    .titulo{
+        margin: 5px 0px 0px 0px;
+        font-weight: bold;
+        padding: 0px;
+        font-size: 17px;
+        color:#000;
+    }    
+    .totalCarrinho{
+        -webkit-box-shadow: 0px 3px 19px -1px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 3px 19px -1px rgba(0,0,0,0.0);
+        box-shadow: 0px 3px 19px -1px rgba(0,0,0,0.0);
+        padding: 10px 10px 10px 20px;
+    }
+    .quantidade{
+        color:#a4a2a5;
+        font-size: 13px;
+        padding:0px; 
+        margin: 20px 0px 5px 0px;
+    }    
+    .carrinho-valor-titulo{
+        color:#a4a2a5;
+        font-size: 13px;
+        padding:0px; 
+        margin:0px;
+    }
+    .carrinho-valor-total{
+        color:#2b71ad;
+        font-size: 21px;
+        padding:0px; 
+        margin:0px;      
+    }
+    .btn-comprar{
+        border-radius:5px;
+        width: 100%;
+        font-weight: bold;
+        padding: 0px;
+        height: 40px;
+        margin: 0px;        
+        font-size: 21px;        
+    }
+    .bt-remove{
+        border-left: 1px solid #bfbdc0;
+        border-top: 1px solid #bfbdc0;        
+        border-bottom: 1px solid #bfbdc0;     
+        padding: 10px;
+        min-width: 20px;
+        min-height: 30px;
+        float: left;
+        border-radius: 5px 0px 0px 5px;
+
+        color:#848283;
+        text-align: center;
+        font-size: 17px;  
+        font-family: 'Lato';    
+        font-weight: bold;            
+    }
+    .bt-num{
+        border: 0px; 
+        border-top: 1px solid #bfbdc0;
+        border-bottom: 1px solid #bfbdc0;        
+        padding: 9px;
+        min-width: 50px;
+        min-height: 30px;        
+        float: left;
+        border-radius: 0px;
+        
+        color:#848283;
+        text-align: center;
+        font-size: 17px;  
+        font-family: 'Lato';    
+        font-weight: bold;        
+    }   
+    .bt-add{
+        border-right: 1px solid #bfbdc0;
+        border-top: 1px solid #bfbdc0;        
+        border-bottom: 1px solid #bfbdc0;     
+        padding: 10px;
+        min-width: 20px;
+        min-height: 30px;
+        float: left;
+        border-radius: 0px 5px 5px 0px;
+
+        color:#848283;
+        text-align: center;
+        font-size: 17px;  
+        font-family: 'Lato';    
+        font-weight: bold;            
+    }    
+    .valorItemQual{
+        color:#1db522;
+        text-align: center;
+        font-size: 18px;  
+        margin-top: 14px;
+        font-family: 'Lato';    
+        font-weight: bold;
+        text-align: right;
+    } 
+    .ico-novo{
+        background: transparent
+    }
+    .btn-fechar-lista{
+        float: left;
+        color:red;
+        text-align: right;
+        font-size: 15px; 
+        width: 100%; 
+        margin-bottom: 10px;
+        font-family: 'Lato';    
+        font-weight: bold;        
+    }
+}

@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_carrinho" (click)="abrirCarrinho()">
+      <ion-badge item-end color="danger" class="menu-loja-bola">{{qtCarrinho}}</ion-badge>
+      <ion-icon name="ios-cart-outline" class="header_carrinho2"></ion-icon> 
+    </div>    
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">     
+    </div>        
+  </ion-navbar>
+</ion-header> 
+<ion-content>
+
+  <ion-card class="card-back">
+    <img src="assets/imgs/background-header-livros.jpg" />  
+    <div class="titulo-card-back">Loja</div>
+  </ion-card>
+  <ion-card class="slide-card">
+      <ion-card-content>
+
+          <ion-row *ngFor= "let itemCat of relLivrosCats">
+              <ion-card-title class="slide-card-chamadas">
+                  <h2 class="slide-card-titulo-chamadas">{{ itemCat.Categoria }}</h2>
+              </ion-card-title>   
+              <ion-col col12>
+
+                    <ion-slides loop="false" slidesPerView="3" parallax="true" speed="1000" pager="false" #productSlides>
+                      <ng-container *ngFor= "let item of relLivros">
+                          <ion-slide *ngIf="itemCat.idlivro_cat === item.Cat" class="slide-card-li">
+                            <div class="slide-card-li-fundo">
+                              <img class="slide-card-li-img" (click)= "abrirModalLoja(item)" src="{{ api }}/{{ item.Caminho }}/{{ item.Pasta }}/{{ item.Img }}_400.jpg"/>
+                            </div>
+                              <h3 (click)= "abrirModalLoja(item)" class="livro-h3">{{ item.Titulo }}</h3>
+                              <div (click)= "abrirModalLoja(item)" class="livro-p">{{ item.Valor }}</div>
+                          </ion-slide>
+                      </ng-container>
+                  </ion-slides>  
+
+              </ion-col>
+          </ion-row> 
+      </ion-card-content> 
+  </ion-card>   
+
+</ion-content>
+<ion-footer class="menu_footer">
+    <div class="ico-menu-footer" style="margin-left: 9%;">
+        <img src="assets/imgs/ico-loja-menu-inicio.png" (click)="abrirPaginaHome()">  
+        <p class="menu_footer_texto" (click)="abrirPaginaHome()">
+          Início
+        </p>
+    </div>
+    <div class="ico-menu-footer">
+        <img src="assets/imgs/ico-loja-menu-livros-s.png" (click)="abrirLojaLivro()">   
+        <p class="menu_footer_texto texto_selecionado" (click)="abrirLojaLivro()">
+          Físicos
+        </p>          
+    </div> 
+    <div class="ico-menu-footer">
+        <img src="assets/imgs/ico-loja-menu-revista.png" (click)="abrirLojaRevista()">     
+        <p class="menu_footer_texto" (click)="abrirLojaRevista()">
+          Digitais
+        </p>         
+    </div> 
+    <div class="ico-menu-footer">
+        <img src="assets/imgs/ico-loja-menu-souvenirs.png" (click)="abrirLojaSouvenirs()">  
+        <p class="menu_footer_texto" (click)="abrirLojaSouvenirs()">
+          Souvenirs
+        </p>          
+    </div>      
+</ion-footer>

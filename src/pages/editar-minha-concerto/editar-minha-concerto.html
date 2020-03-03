@@ -1,0 +1,36 @@
+<ion-content>
+  <ion-card class="novidades-card">
+    <ion-row>
+      <ion-col col-1>
+        <h2 class="video-card-categoria" (click)="voltar()">
+          <ion-icon name="arrow-dropleft-circle" (click)="voltar()"></ion-icon>
+        </h2>   
+      </ion-col>      
+      <ion-col col-6>
+        <h2 class="video-card-categoria">
+          Concertos
+        </h2>   
+      </ion-col>
+      <ion-col>
+        <div class="editar" (click)="voltar()">
+          Editar
+        </div>
+        <div class="editar-img" (click)="voltar()">
+          <img src="assets/imgs/ico-mais.png">
+        </div>   
+      </ion-col>
+      <ion-col col-12>
+        <div class="subtitulo">
+          Itens Minha Lista
+        </div>          
+        <div *ngFor="let item of minhaLista; let i = index;"> 
+          <div *ngIf="item.idconcerto != 0">
+            <p class="conteudo">{{item.Titulo}}
+              <span class="btn-fechar-lista" (click)="showConfirm(item)">X</span>
+            </p>
+          </div>
+        </div>         
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

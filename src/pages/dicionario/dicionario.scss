@@ -1,0 +1,138 @@
+page-dicionario {
+    .busca-input{
+        margin-bottom: 0%;        
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 0%;
+        width: 98%;
+        border: 0px;
+        border-bottom: 1px solid #d5b340;
+        padding:0px;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .novidades-card{    
+      border: 0px;
+      margin-bottom: 0%;        
+      margin-left: 1%;
+      margin-right: 1%;
+      margin-top: 0%;
+      width: 98%;
+      border-bottom: 1px solid #d5b340;    
+      padding: 0px;
+      background: transparent;
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+      -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .video-card-titulo{
+      color:#fff;
+      font-family: 'DINPro-Bold'; 
+      font-size: 16px;      
+    }
+    .video-card-tipo{
+      color:#d5b340;
+      font-size: 11px;    
+      font-family: 'DINPro-light'; 
+      float: right;
+      margin-top:4px;    
+    }
+    .titulos-card{
+      border: 0px;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      background: transparent;
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+      -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .titulos-card .titulos-card-chamadas{
+        border-bottom: 2px solid #d5b340;
+    }
+    .titulos-card .titulos-card-titulo-chamadas{
+        color:#000;
+        font-family: 'DINPro-Bold'; 
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .titulos-card-titulo{
+        color:#d5b340;
+        font-family: 'DINPro-Bold'; 
+        font-size: 20px;
+    }
+    .card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+  
+    .titulo-card-back{
+        position: absolute;
+        top: 40%;
+        font-size: 30px;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        font-family: 'Lato';        
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);   
+        text-transform: uppercase;
+    }
+  
+    .subtitulo-card-back{
+        font-size: 18px;
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        color: #fff;
+        font-family: 'Lato';        
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);      
+    }
+    .botao-retorna{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+        width: 98%;
+        font-size: 13px;   
+        font-weight: bold;  
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-bottom: 10px;                 
+        font-family: 'Lato';          
+        background: #d5b340;
+        border: 1px solid #d5b340;
+        color:#000; 
+        border-radius: 5px;         
+    }
+    .lbotao-retorna:hover{
+        border: 1px solid #d5b340;
+        background:transparent;
+        color:#d5b340;   
+    }   
+    .botao-retorna:focus{             
+        border: 1px solid #d5b340;
+        background:transparent;
+        color:#d5b340;        
+    }     
+    .botao-retorna:active{             
+        border: 1px solid #d5b340;
+        background:transparent;
+        color:#d5b340;           
+    }         
+    .botao-retorna.activated{             
+        border: 1px solid #d5b340;
+        background:transparent;
+        color:#d5b340;   
+    } 
+}

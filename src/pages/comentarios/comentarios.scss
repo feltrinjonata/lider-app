@@ -1,0 +1,89 @@
+page-comentarios {
+  .input-btn{
+    border-top: 1px solid #f8f8f8;
+    font-size: 20px;
+    color: #c1c1c1;
+    font-family: 'Lato';
+    width: 100%;
+    padding: 12px;
+    background: #f1f1f1;
+    height: 70px;
+  }
+
+  .btn-envia{
+    width: 100%;
+    font-size: 20px; 
+    color:#fff;
+    background: #d5b340;
+    border-radius: 0px;
+    margin:0px;
+    height: 70px;
+  } 
+  .btn-envia:hover{
+    border: 1px solid #d5b340;   
+  }    
+  .btn-envia:focus{             
+    background: #d5b340;    
+  }  
+  .btn-envia:visited{             
+    background: #d5b340;     
+  }         
+  .btn-envia:active{             
+    background: #d5b340;       
+  } 
+  .btn-envia.activated{             
+    background: #d5b340;       
+  } 
+
+  .novidades-card{    
+    border: 0px;
+    width: 100%;
+    margin: 0px;
+    background: transparent;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0); 
+  }
+  .novidades-card-borda{    
+    border: 0px;
+    width: 100%;
+    margin: 0px;
+    border-bottom: 1px solid #bfbfc0;   
+    background: transparent;
+  } 
+  .video-card-titulo{
+    color:#d5b340; 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;    
+    font-family: 'Lato';     
+  }
+  .video-card-desc{
+    color:#fff;
+    font-size: 16px;  
+    font-family: 'Lato';   
+    margin: 15px 0px 0px 0px;     
+  } 
+  .video-card-desc2{
+    color:#fff;
+    font-size: 16px;  
+    font-family: 'Lato';  
+    margin: 15px 0px 0px 0px;   
+  } 
+  .video-card-tipo{
+    color:#d5b340;
+    font-size: 12px;    
+    font-family: 'Lato'; 
+    float: right;
+    margin-top:4px;    
+  }
+  .btn-fechar{
+    position: absolute;
+    right: 10px;
+    margin-top: 0px;
+    color:#d5b340;
+    font-size: 15px;  
+    font-family: 'Lato';    
+    font-weight: bold;        
+  }
+}

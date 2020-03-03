@@ -1,0 +1,61 @@
+<ion-content class="login-content no-scroll">
+  <div class="login-card">
+    <ion-navbar>
+      <button ion-button block (click)="fecharModal()" class="bt-fecha-modal">X</button>
+      <div class="titulo">
+        Dados de Entrega
+      </div>        
+    </ion-navbar>     
+    <div class="fundo">
+      <div class="caixa">
+        <p class="titulo-entrega">Endereço de Entrega</p>        
+        <div class="login-inputs">         
+            <ion-input class="caixa-input" value="{{EnderecoUserQual}}" [(ngModel)]="data2.endereco" type="text" placeholder="Endereço *" name="endereco" required ></ion-input>
+            <ion-input class="caixa-input" value="{{NumeroUserQual}}" [(ngModel)]="data2.numero" type="text" placeholder="Número *" name="numero" required [brmasker]="{mask:'000000000000000000000000000000', len:25, type:'num'}" autocomplete="off" autocorrect="oof" autocapitalize="off" spellcheck="false"></ion-input>
+            <ion-input class="caixa-input" value="{{BairroUserQual}}" [(ngModel)]="data2.bairro" type="text" placeholder="Bairro *" name="bairro" required ></ion-input>
+            <ion-input class="caixa-input" value="{{ComplementoUserQual}}" [(ngModel)]="data2.complemento" type="text" placeholder="Complemento" name="complemento" required ></ion-input>
+            <ion-input class="caixa-input" value="{{CidadeUserQual}}" [(ngModel)]="data2.cidade" value="BRA" type="text" placeholder="Cidade *" name="cidade" required ></ion-input>
+            <ion-input class="caixa-input" value="{{PaisUserQual}}" [(ngModel)]="data2.pais" type="text" placeholder="País *" name="pais" required ></ion-input>
+            <ion-item class="caixa-input-select">
+              <ion-label class="caixa-input-label">Estado *</ion-label>
+              
+              <ion-select [(ngModel)]="data2.estado">
+
+                <ion-option value="RS" selected="{{(EstadoUserQual=='RS').toString()}}" >Rio Grande do Sul</ion-option>
+
+                <ion-option value="AC" selected="{{(EstadoUserQual=='AC').toString()}}" >Acre</ion-option>
+                <ion-option value="AL" selected="{{(EstadoUserQual=='AL').toString()}}" >Alagoas</ion-option>
+                <ion-option value="AP" selected="{{(EstadoUserQual=='AP').toString()}}" >Amapá</ion-option>
+                <ion-option value="AM" selected="{{(EstadoUserQual=='AM').toString()}}" >Amazonas</ion-option>
+                <ion-option value="BA" selected="{{(EstadoUserQual=='BA').toString()}}" >Bahia</ion-option>
+                <ion-option value="CE" selected="{{(EstadoUserQual=='CE').toString()}}" >Ceará</ion-option>
+                <ion-option value="DF" selected="{{(EstadoUserQual=='DF').toString()}}" >Distrito Federal</ion-option>
+                <ion-option value="ES" selected="{{(EstadoUserQual=='ES').toString()}}" >Espírito Santo</ion-option>
+                <ion-option value="GO" selected="{{(EstadoUserQual=='GO').toString()}}" >Goiás</ion-option>             
+                <ion-option value="MA" selected="{{(EstadoUserQual=='MA').toString()}}" >Maranhão</ion-option>
+
+                <ion-option value="PB" selected="{{(EstadoUserQual=='PB').toString()}}" >Paraíba</ion-option>
+                <ion-option value="PR" selected="{{(EstadoUserQual=='PR').toString()}}" >Paraná</ion-option>
+                <ion-option value="PE" selected="{{(EstadoUserQual=='PE').toString()}}" >Pernambuco</ion-option>
+                <ion-option value="PI" selected="{{(EstadoUserQual=='PI').toString()}}" >Piauí</ion-option>
+                <ion-option value="RJ" selected="{{(EstadoUserQual=='RJ').toString()}}" >Rio de Janeiro</ion-option>
+                <ion-option value="RO" selected="{{(EstadoUserQual=='RO').toString()}}" >Rio Grande do Norte</ion-option>
+                <ion-option value="RR" selected="{{(EstadoUserQual=='RR').toString()}}" >Rondônia</ion-option>
+                <ion-option value="SC" selected="{{(EstadoUserQual=='SC').toString()}}" >Santa Catarina </ion-option>
+                <ion-option value="SP" selected="{{(EstadoUserQual=='SP').toString()}}" >São Paulo</ion-option>
+                <ion-option value="SE" selected="{{(EstadoUserQual=='SE').toString()}}" >Sergipe</ion-option>
+                <ion-option value="TO" selected="{{(EstadoUserQual=='TO').toString()}}" >Tocantins</ion-option>
+
+              </ion-select>
+
+            </ion-item>          
+            <ion-input class="caixa-input" value="{{CepUserQual}}" [(ngModel)]="data2.cep" type="text" placeholder="CEP *" name="cep" required [brmasker]="{mask:'00000-000', len:9, type:'num'}" autocomplete="off" autocorrect="oof" autocapitalize="off" spellcheck="false"></ion-input>
+            
+        </div>
+        <div class="login-btn-entrar">
+          <button ion-button (click)="enviarEndereco()" class="login-btn-entrar-button">Enviar</button>     
+        </div>
+      </div>   
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,112 @@
+page-titulos {
+    .slide-card .slide-card-li img{
+        width:100%;
+    }     
+    .titulos-card{
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .titulos-card .titulos-card-chamadas{
+        border-bottom: 2px solid #d5b340;
+        width: 100%;
+    }
+    .titulos-card .titulos-card-titulo-chamadas{
+        color:#000;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Lato';
+    }
+    .titulos-card-titulo{
+        color:#a92121;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Lato';
+    }
+    .card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+    .slide-card .slide-card-chamadas{
+        width: 100%;
+		border-bottom: 1px solid #d5b340;
+	}
+	.slide-card .slide-card-titulo-chamadas{
+		color:#fff;
+		font-size: 13px;
+        font-family: 'DINPro-Bold';     
+    }
+	.slide-card{ 
+		border: 0px;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		background: transparent;
+		-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+		-moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+		box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);    
+    }  
+    
+    .titulo-card-back{
+        position: absolute;
+        top: 32%;
+        width: 100%;
+    }
+    .titulo-card-back h1{ 
+        margin-top: 20px;
+        font-size: 25px;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);   
+        font-family: 'BodoniBkBTBook';      
+        text-transform: uppercase;
+    }    
+    .titulo-card-back p{
+        font-size: 12px;
+        width: 100%;
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);    
+        font-family: 'DINPro';  
+    }
+
+    .titulo{
+        margin: 5px 0px 0px 0px;
+        font-weight: bold;
+        padding: 0px;
+        font-size: 10px;
+        color:#fff;
+    }
+    .subtitulo{
+        margin: 0px;
+        padding: 0px;
+        font-size: 10px;
+        color:#fff;
+    }
+    .card-ios p {
+        color:#fff;
+        font-size: 15px;
+        font-family: 'DINPro-Light';  
+        background: transparent;  
+    } 
+    .card-md p {
+        color:#fff;
+        font-size: 15px;
+        font-family: 'DINPro-Light';  
+        background: transparent;  
+    }  
+}

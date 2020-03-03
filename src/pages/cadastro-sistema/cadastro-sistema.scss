@@ -1,0 +1,161 @@
+page-cadastro-sistema {
+    .msg-caixa{
+      margin: 0px;
+      padding: 1px 0px 0px 0px;
+      width: 100%;
+      min-height: 1px;
+      background: transparent;
+      border:0px;
+    }
+    .msg-erro{
+      color:red;
+      font-size: 10px;
+      padding: 0px;
+      margin: 0px;
+    }
+    .scroll-content {
+      padding-bottom: 0!important;
+    }  
+    .login-content{
+      background: url(../assets/imgs/background-app.png) no-repeat center center;
+      background-size: cover;
+      width: 100%;
+    }
+    .login-card{
+      padding: 20px;
+      border-radius: 6px;
+      margin: 20px;
+      min-height: 94%;
+      background: #fff;
+    }
+    .login-logo{
+      max-width: 50px;
+      margin: 0 auto;
+    }
+    .input-btn{
+      border-bottom: 1px solid #9fa9b5;
+      font-size: 12px;
+      color: #9fa9b5;
+      font-family: 'Lato';
+      width: 100%;
+      padding: 0px;
+      background: #fff;
+      border-radius: 0px;
+    }
+    .input-btn:hover{
+      color:#d5b340;
+      border-bottom: 1px solid #d5b340;
+      background: #fdfdfd;
+    }  
+    .login-inputs{
+      margin-top:0%;
+    }
+    .login-texto{
+      color:#d5b340;
+      font-size: 15px;
+    }
+    .login-btn-entrar{
+      margin-top: 20px; 
+      width: 100%;
+      text-align: center;
+      padding: 0px;
+    }
+    .login-btn-entrar-button{
+      border: 1px solid #d5b340;
+      border-radius: 8px;
+      background: #fff;
+      padding: 20px;
+      color:#d5b340;
+      width: 100%;
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+      -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);     
+    }  
+    .toolbar-background{
+      background: #fff;
+    }
+    .toolbar{
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        border-bottom: 0px; 
+    }       
+    .titulo{
+      color: #d5b340;
+      text-align: center;
+      font-weight: bold;
+      font-size: 21px;
+      font-family: 'Lato';  
+    }
+    .login-btn-outros{
+      position: relative;
+      width: 85%;
+      margin: 0 auto;  
+      padding-top: 5px;            
+    }
+    .login-btn-outros .btn{
+        text-align: center;
+        border: 1px solid #d5b340;
+        border-radius: 8px;
+        background: #fff;
+        padding: 3px 6px 3px 6px;
+        color:#d5b340;
+        position: relative;
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+        font-size: 13px;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);             
+    }   
+  .politica{
+    float:left;
+    margin: 4px 0px 0px 8px;
+    font-size:12px;
+    color:#d5b340;
+  }
+  .disable-hover{
+    color:#d5b340;  
+  }       
+  .login-btn-entrar-button:hover{
+    border: 1px solid #d5b340;   
+    background: #d5b340;
+    color:#000;  
+  }    
+  .login-btn-entrar-button:focus{             
+    background: #d5b340;
+    border: 1px solid #d5b340;
+    color:#000;       
+  }     
+  .login-btn-entrar-button:visited{             
+    background: #d5b340;
+    border: 1px solid #d5b340;
+    color:#000;       
+  }       
+  .login-btn-entrar-button:active{             
+    background: #d5b340;
+    border: 1px solid #d5b340;
+    color:#000;       
+  }    
+  .login-btn-entrar-button.activated{             
+    background: #d5b340;
+    border: 1px solid #d5b340;
+    color:#000;   
+  }   
+    .cx-aceita-termos{
+      margin: 20px 0px 10px 0px; 
+      position: relative; 
+      width: 100%; 
+      min-height: 20px;
+    }
+    .cx-aceita-termos .chebox-aceito{
+      float: left;
+      margin-right:10px;
+    }    
+    .cx-aceita-termos a{
+      float: left;
+    }  
+
+  }

@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content class="transparente pantera">
+
+  <ion-card *ngFor= "let itemComentario of relComentarios" class="novidades-card">
+    <ion-card-content *ngIf="itemComentario.Idqual == idqualSel && itemComentario.Modulo == moduloSel" class="novidades-card-borda">
+      <div *ngIf="itemComentario.Iduser == IdUserQual">
+        <span class="btn-fechar" (click)="showConfirm(itemComentario.idcomentario)">X</span> 
+      </div>      
+      <ion-item style="background: transparent;">
+        <ion-avatar item-start> 
+          <img src="{{ itemComentario.FotoUser }}">
+        </ion-avatar>
+        <h2 class="video-card-titulo">{{ itemComentario.NomeUser }}</h2>
+        <p>{{ itemComentario.DataFinal }} </p>
+      </ion-item>         
+      <p>{{ itemComentario.Comentario }} </p>         
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <div style="width:90%; float: left">
+      <ion-input type="text" placeholder="Digite seu comentário..." name="Comentario" [(ngModel)]="data.Comentario" required class="input-btn" ></ion-input>
+      <ion-input type="hidden" value="{{IdUserQual}}" [(ngModel)]="data.iduserComentario" name="iduserComentario" ></ion-input>
+      <ion-input type="hidden" value="{{idqualSel}}" [(ngModel)]="data.idqualComentario" name="idqualComentario" ></ion-input>
+      <ion-input type="hidden" value="{{moduloSel}}" [(ngModel)]="data.moduloComentario" name="moduloComentario" ></ion-input>
+    </div>
+    <div style="width:10%; float: left">
+      <button ion-button (click)="EnviaComentario()" class="btn-envia"> > </button>
+    </div>
+  </ion-row>    
+</ion-footer>

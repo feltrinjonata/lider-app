@@ -1,0 +1,81 @@
+page-eventos {
+
+	.card-back{
+        position: relative;
+        text-align:  center;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);        
+    }
+    .btn-novo{
+        border: 0px;
+        font-size: 20px;
+        color:#707070;
+        width: 50%;
+        float: left;
+        padding: 10px;
+        text-align: center;
+        font-family: 'DINPro';  
+        font-size:15px;
+    }
+    .action_evento{
+        color: #d5b340;
+        border-bottom: 3px solid #d5b340;
+
+    }
+    .eventoTitulo{
+        color:#fff;
+        font-size: 22px;
+        font-family: 'DINPro-Bold';     
+        font-weight: bold;  
+    }
+    .eventoTitulo{
+        color:#fff;
+        font-size: 18px;
+        font-family: 'DINPro-light';       
+    }
+    .card-eventos{
+        position: relative;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+    .novidades-card{    
+        background: transparent;
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        border-radius:0px;
+        border-bottom: 5px solid #cdcdcd;    
+    }
+    .video-card-titulo{
+        background: transparent;
+        color:#fff;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: 'DINPro-Bold';  
+    }
+    .video-card-desc{
+        color:#fff;
+        font-size: 12px;
+        font-family: 'DINPro-light';    
+    } 
+    .box-novidades{
+        padding:0px; 
+        min-height:180px; 
+        background: transparent;
+        margin-bottom:10px;
+    }    
+}

@@ -1,0 +1,151 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="transparente pantera" *ngFor="let plano of relPlanos; let i = index">
+
+  <div class="fundo mt50">
+    <div class="caixa">
+      <p class="titulo-entrega">Meu Perfil</p>        
+      <div class="">
+
+        <ion-item class="caixa-user"> 
+          <ion-avatar item-start> 
+            <img src="{{ FotoUserQual }}">
+          </ion-avatar>
+          <h2 class="tituloPerfil">{{ NomeUserQual }} {{ SobrenomeUserQual }}</h2>
+        </ion-item>
+
+        <div class="caixa-links" (click)="mudarDados()">
+          Alterar Nome
+        </div>
+        <div class="caixa-links" (click)="mudarSenha()">
+          Alterar Minha Senha
+        </div>
+        <div class="caixa-links" (click)="mudarFoto()">
+          Alterar Foto
+        </div>
+      </div>
+    </div>   
+  </div>
+  <div class="fundo">
+    <div class="caixa">
+      <p class="titulo-entrega">Seu Plano</p>        
+      <div class="">
+        <div class="caixa-links">
+          <span style="color:#d5b340; ">{{ PlanoUserQual }}</span>
+        </div>
+        <!--
+        <div class="caixa-links">
+          <span style="color:#d5b340; ">{{ plano.ValorEscrito }}</span>
+        </div>  
+        -->         
+      </div>
+    </div>   
+  </div>
+  <div class="fundo"> 
+    <div class="caixa">
+      <p class="titulo-entrega">Gerenciar Plano</p>        
+      <div class="">
+        <div class="caixa-links" style="border-bottom: 1px solid #b7b7b7;" (click)="mudarPlano()">
+          Alterar o plano
+        </div>  
+        <!--
+        <div class="caixa-links" style="border-bottom: 1px solid #b7b7b7;" (click)="CancelamentoConta()">
+          Cancelar assinatura
+        </div>                        
+        <div style="font-size: 9px; margin-top: 15px; color:#fff;">
+          <i>* A mensalidade é cobrada no início de cada período de cobrança. Alguns dias podem transcorrer antes da cobrança ser exibida na sua conta. O cancelamento da assinatura pode ser feita a qualquer momento na sua conta do Itunes.</i><Br><Br>
+        </div> 
+        -->       
+      </div>
+    </div>   
+  </div>  
+  <!--
+  <div class="fundo">
+    <div class="caixa">
+      <p class="titulo-entrega">Detalhes da cobrança</p>        
+      <div class="">
+        <div class="caixa-links">                          
+          Próxima fatura:<br>
+          <span style="color:#d5b340; ">{{ PlanoUserQual }} por {{ plano.ValorEscrito }}</span>
+        </div>
+        <div class="caixa-links">        
+          Data da próxima Fatura:<br>
+          <span style="color:#d5b340; ">{{ plano.DataProximaParcela }}</span>
+        </div>
+        <div class="caixa-links">        
+          Forma de Pagamento:<br>
+          <span style="color:#d5b340; ">Itunes - Apple</span>
+          <span style="color:#d5b340; ">Itunes</span>
+        </div> 
+        <div class="caixa-links" style="border-bottom: 1px solid #b7b7b7;" (click)="VerCobranca()">
+          Informações de cobrança
+        </div>            
+        <div style="font-size: 9px; margin-top: 15px;">
+          <i>* O pagamento será cobrado na conta do Itunes na confirmação da compra</i><Br><Br>
+          <i>* A assinatura é renovada automaticamente, a menos que a renovação automática seja desativada pelo menos 24 horas antes do final do período atual</i><Br><Br>
+          <i>* A conta será cobrada para renovação dentro de 24 horas antes do final do período atual e identificará o custo da renovação</i><Br><Br>
+          <i>* As assinaturas podem ser gerenciadas pelo usuário e a renovação automática pode ser desativada acessando as Configurações da conta do usuário após a compra</i><Br><Br>
+          <i>* Qualquer parte não usada de um período de teste gratuito, se oferecido, será perdida quando o usuário adquirir uma assinatura para essa publicação, quando aplicável.</i><Br><Br>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <div class="fundo"> 
+    <div class="caixa">
+      <p class="titulo-entrega">Endereço</p>        
+      <div class="">
+        <div class="textoEntrega">
+
+          <ng-container *ngIf="!!EnderecoUserQual">
+            {{EnderecoUserQual}}, 
+          </ng-container>
+          <ng-container *ngIf="!!NumeroUserQual">
+            {{NumeroUserQual}}<Br>
+          </ng-container>
+          <ng-container *ngIf="!!BairroUserQual">
+            Bairro {{BairroUserQual}}<Br>
+          </ng-container>
+          <ng-container *ngIf="!!ComplementoUserQual">
+            {{ComplementoUserQual}}<Br>
+          </ng-container>
+          <ng-container *ngIf="!!CidadeUserQual">
+            {{CidadeUserQual}}<Br>  
+          </ng-container>                                        
+          <ng-container *ngIf="!!EstadoUserQual">
+            {{EstadoUserQual}}<Br> 
+          </ng-container>      
+          <ng-container *ngIf="!!PaisUserQual">
+            {{PaisUserQual}}<Br> 
+          </ng-container>      
+          <ng-container *ngIf="!!CepUserQual">
+            CEP {{CepUserQual}}   
+          </ng-container>                      
+         
+        </div>
+        <div class="caixa-links" style="border-top: 1px solid #b7b7b7; border-bottom: 1px solid #b7b7b7;" (click)="mudarEndereco()">
+          Alterar ou adicionar Endereço
+        </div>
+
+      </div>
+    </div>   
+  </div>
+-->
+</ion-content>

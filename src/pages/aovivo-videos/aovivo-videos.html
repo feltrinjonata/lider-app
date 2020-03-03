@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-on.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+<ion-content class="transparente pantera"> 
+    
+<ion-card class="card-eventos">
+  <p class="btn-novo" (click)="abrirPaginaAovivoArquivo()">
+    ARQUIVO
+  </p>          
+  <p class="btn-novo action_evento" (click)="abrirPaginaAoVivoVideo()">
+    AO VIVO
+  </p>
+  <p class="btn-novo" (click)="abrirPaginaAovivoProximas()">
+    PRÓXIMOS
+  </p>
+</ion-card>
+<div *ngFor= "let item of RelAovivo; let i = index">
+  <ng-container *ngIf="item.Live == '1' else other_content">
+      <ion-card class="card-eventos">
+        <h4 class="eventoTitulo">{{item.Titulo}}</h4>
+        <h4 class="eventoSubTitulo">{{item.Subtitulo}}</h4>
+        <iframe src="https://app.progettoapp.com.br/ao-vivo/player" width="100%" height="{{item.PlayerHeight}}" frameborder="0" scrolling="auto" allowtransparency="true" style="background: url(assets/imgs/carregando.gif) center center no-repeat;"></iframe>
+        <div class="texto">{{item.Descricao}}</div>
+        <ion-row>
+          <ion-col col-12 padding>
+            <h4 class="arqTitulo"><strong>Arquivos para download</strong></h4>
+          </ion-col>
+
+          <ion-col col-12 no-padding *ngFor= "let arq of RelAovivoArquivos; let i = index">
+            <ng-container *ngIf="item.idaovivo == arq.idaovivo">
+              <p class="arquivos"> 
+                <a (click)="abrirArquivo(arq)">
+                >> {{arq.Titulo}}</a>
+              </p>
+            </ng-container>
+          </ion-col>
+                    
+        </ion-row>  
+      </ion-card>
+  </ng-container>
+  <ng-template #other_content>
+    <div class="">
+      <ion-card class="card-eventos">
+        <img src="assets/imgs/ico-back-aovivo.png">
+      </ion-card>
+    </div>    
+  </ng-template>
+</div>
+</ion-content> 
+<ion-footer class="menu_footer">
+  <div class="ico-menu-footer">
+    <ng-container *ngIf="qtdePublicacoes > 0">
+      <ion-badge item-end color="danger" class="menu-footer-bola">{{qtdePublicacoes}}</ion-badge>
+    </ng-container>
+    <img src="assets/imgs/ico-menu-footer-novidades.png" (click)="abrirPaginaHome()">  
+    <p class="menu_footer_texto" (click)="abrirPaginaHome()">
+      Novidades
+    </p>
+  </div>
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-pl.png" (click)="abrirPaginaPl()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaPl()">
+      Matérias
+    </p>          
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-loja-menu-revista.png" (click)="abrirPaginaPublicacoes()">     
+    <p class="menu_footer_texto" (click)="abrirPaginaPublicacoes()">
+      Publicações
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-aulas.png" (click)="abrirPaginaTitulos()">   
+    <p class="menu_footer_texto" (click)="abrirPaginaTitulos()">
+      Vídeos
+    </p>         
+  </div> 
+  <div class="ico-menu-footer">
+    <img src="assets/imgs/ico-menu-footer-podcast.png" (click)="abrirPaginaOntoarte()">  
+    <p class="menu_footer_texto" (click)="abrirPaginaOntoarte()">
+      Áudios
+    </p>          
+  </div>       
+</ion-footer>

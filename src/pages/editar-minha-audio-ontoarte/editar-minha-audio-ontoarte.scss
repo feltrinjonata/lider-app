@@ -1,0 +1,83 @@
+page-editar-minha-audio-ontoarte {
+    .editar{
+        position: absolute;
+        max-width: 50px;  
+        right:25px;
+        font-size: 15px;
+        color:#d5b340;
+        margin-top:-2px;          
+    }
+    .editar-img{
+        position: absolute;
+        max-width: 15px;  
+        right:5px;
+        margin-top:-1px;  
+    }   
+    .video-card-categoria{
+        color:#d5b340; 
+        font-family: 'Lato'; 
+        text-transform: uppercase; 
+        padding-bottom: 10px; 
+    }      
+    .novidades-card{    
+        border: 0px;
+        width: 100%;
+        margin: 0px;
+        padding:10px;        
+        background: transparent;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);    
+    }
+    .titulo{
+        color:#d5b340;
+        text-transform: uppercase;
+        font-size: 18px;    
+        font-family: 'Lato';     
+        margin: 0px 0px 20px 0px;
+    } 
+    .subtitulo{
+        color:#d5b340;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;    
+        font-family: 'Lato';     
+        border-bottom: 1px solid #dcdcdc;
+        padding: 0px 0px 10px 0px;
+        margin: 0px 0px 10px 0px;        
+    }        
+    .meu-progeto-titulo{
+        color:#fff;
+        text-align: center;
+        font-size: 18px;  
+        font-family: 'Lato';    
+        border: 0px;
+        width: 100%;
+        margin: 0px;      
+    }
+    .conteudo{
+        color: #fff;
+        font-size: 15px;  
+        font-family: 'Lato';    
+        margin: 0px 0px 10px 0px;   
+    }
+    .btn-fechar{
+        position: absolute;
+        right:15px;
+        color:#fff;
+        text-align: center;
+        font-size: 17px;  
+        font-family: 'Lato';    
+        font-weight: bold;            
+        background: #f1f1f1;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+    }
+    .btn-fechar-lista{
+        float: right;
+        color:red;
+        font-size: 15px;  
+        font-family: 'Lato';    
+        font-weight: bold;        
+    }
+}

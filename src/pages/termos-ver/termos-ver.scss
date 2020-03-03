@@ -1,0 +1,32 @@
+page-termos-ver {
+    .conteudo{
+        width: 100%;
+        font-size: 21px;
+        float: left;
+        color: #d5b340;
+        margin-bottom: 0px;
+        font-weight: bold;
+        font-family: 'Lato';          
+    } 
+    .toolbar{
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        border-bottom: 0px; 
+    }      
+    .toolbar-background{
+        background: #fff;
+        border:0px;
+    }
+    .toolbar{
+        border:0px;
+    }       
+    .descricao{
+        width: 100%;
+        font-size: 15px;
+        float: left;
+        color: #fff;
+    }     
+}

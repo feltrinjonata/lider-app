@@ -1,0 +1,103 @@
+<ion-header style=" background: red;">
+  <ion-navbar style=" background: red;">
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="transparente pantera">
+
+  <div class="fundo">
+    <div class="caixa">
+      <p class="titulo-entrega">Meu Perfil</p>        
+      <div class="">
+
+        <ion-item class="caixa-user"> 
+          <ion-avatar item-start> 
+            <img src="{{ FotoUserQual }}">
+          </ion-avatar>
+          <h2 class="tituloPerfil">{{ NomeUserQual }} {{ SobrenomeUserQual }}</h2>
+        </ion-item>
+
+        <div class="caixa-links" (click)="mudarDados()">
+          Alterar Nome
+        </div>
+        <div class="caixa-links" (click)="mudarSenha()">
+          Alterar Minha Senha
+        </div>
+        <div class="caixa-links" (click)="mudarFoto()">
+          Alterar Foto
+        </div>
+      </div>
+    </div>   
+  </div>
+
+  <div class="fundo">
+    <div class="caixa">
+      <p class="titulo-entrega">Detalhes do Plano e Pagamentos</p>        
+      <div class="">
+
+        <div class="caixa-user" style="border-bottom:0px;"> 
+          <h2 class="tituloEntrega" style="padding: 0px; margin: 0px;">{{ PlanoUserQual }}</h2>
+        </div>
+        <div class="caixa-links" (click)="mudarFoto()">
+          Pagamentos
+        </div>
+      </div>
+    </div>   
+  </div>
+
+  <div class="fundo">
+    <div class="caixa">
+      <p class="titulo-entrega">Endereço de Entrega</p>        
+      <div class="">
+        <div class="textoEntrega">
+
+          <ng-container *ngIf="!!EnderecoUserQual">
+            {{EnderecoUserQual}}, 
+          </ng-container>
+          <ng-container *ngIf="!!NumeroUserQual">
+            {{NumeroUserQual}}<Br>
+          </ng-container>
+          <ng-container *ngIf="!!BairroUserQual">
+            Bairro {{BairroUserQual}}<Br>
+          </ng-container>
+          <ng-container *ngIf="!!ComplementoUserQual">
+            {{ComplementoUserQual}}<Br>
+          </ng-container>
+          <ng-container *ngIf="!!CidadeUserQual">
+            {{CidadeUserQual}}<Br>  
+          </ng-container>                                        
+          <ng-container *ngIf="!!EstadoUserQual">
+            {{EstadoUserQual}}<Br> 
+          </ng-container>      
+          <ng-container *ngIf="!!PaisUserQual">
+            {{PaisUserQual}}<Br> 
+          </ng-container>      
+          <ng-container *ngIf="!!CepUserQual">
+            CEP {{CepUserQual}}   
+          </ng-container>                      
+         
+        </div>
+        <div class="caixa-links" style="border-top: 1px solid #b7b7b7; border-bottom: 1px solid #b7b7b7;" (click)="mudarEndereco()">
+          Alterar ou adicionar Endereço
+        </div>
+
+      </div>
+    </div>   
+  </div>
+
+</ion-content>

@@ -1,0 +1,121 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+        <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+        <img src="assets/imgs/ico-calendario.jpg">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+        <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>cxzc
+</ion-header>
+<ion-content class="transparente pantera">
+
+<!-- <ion-grid>
+    <ion-row>
+            <div style="float:left; width:35%; padding: 20px;">
+                    <img src="http://www.redeplaneje.com.br/midias-lider/r/albuns/capa_nova.jpg" width="100%">
+                </div>
+                <div style="float:left; width:65%;">
+                    <h2 class="albumTitulo">Albúm Metafísica Brasiliana</h2>
+                    <h6 class="albumSubtitulo">Antonio Meneghetti
+                    <Br>Volume I</h6>
+                    <p class="albumDesc">Nossas emoções, através da música, nos levam a caminhos
+                            percorridos entre lágrimas, sorrisos, dor, prazer metafísico.
+                            O Maestro Antonio Meneghetti fala através da música todas
+                            essas emoções vividas na existência.
+                            O ritmo torna-se fenômeno ocasional para entrar na pura
+                            percepção do ser.</p> 
+                </div>
+    </ion-row>
+</ion-grid> -->
+
+<!-- 
+<div style="position: relative; width: 100%;">
+    <div style="float:left; width:35%; padding: 20px;">
+        <img src="http://www.redeplaneje.com.br/midias-lider/r/albuns/capa_nova.jpg" width="100%">
+    </div>
+    <div style="float:left; width:65%;">
+        <h2 class="albumTitulo">Albúm Metafísica Brasiliana</h2>
+        <h6 class="albumSubtitulo">Antonio Meneghetti
+        <Br>Volume I</h6>
+        <p class="albumDesc">Nossas emoções, através da música, nos levam a caminhos
+                percorridos entre lágrimas, sorrisos, dor, prazer metafísico.
+                O Maestro Antonio Meneghetti fala através da música todas
+                essas emoções vividas na existência.
+                O ritmo torna-se fenômeno ocasional para entrar na pura
+                percepção do ser.</p> 
+    </div>
+</div> -->
+
+<!-- <div style="position: relative; width: 100%;">
+    <img src="assets/imgs/musica-banner.png">
+</div>
+ -->
+
+<ion-card *ngFor="let item of relAudios">
+        <ion-row>
+                <ion-col col-2>
+                    <img src="http://www.redeplaneje.com.br/midias-lider/r/albuns/capa_nova.jpg" width="100%">
+                </ion-col>
+                <ion-col col-8>
+                    <!-- <ion-list class="listItem"> -->
+                        <ion-item (click)="startAudio(item)" class="listItem">
+                            <ion-icon name="play" item-start></ion-icon>
+                            <h2 class="tituloFaixa">{{item.audio}}<Br><span class="subtituloFaixa"> {{item.artista}}</span></h2>
+                        </ion-item>
+                    <!-- </ion-list> -->
+                </ion-col>
+                <ion-col col-2>
+                   <p >{{item.Tempo}}</p> 
+                </ion-col>
+            </ion-row>
+</ion-card>
+
+<!-- <ion-grid>
+    <ion-card *ngFor="let item of relAudios">
+        <ion-row>
+            <ion-col col-2>
+                <img src="http://www.redeplaneje.com.br/midias-lider/r/albuns/capa_nova.jpg" width="100%">
+            </ion-col>
+            <ion-col col-8 style="border: 0px; border-bottom: 1px solid #ebebeb;">
+                
+                    <ion-item (click)="startAudio(item)" class="listItem">
+                        <ion-icon name="play" item-start></ion-icon>
+                        <h2 class="tituloFaixa">{{item.audio}}<Br><span class="subtituloFaixa"> {{item.artista}}</span></h2>
+                    </ion-item>
+                
+            </ion-col>
+            <ion-col col-2>
+               <p >{{item.Tempo}}</p> 
+            </ion-col>
+        </ion-row>
+    </ion-card>
+</ion-grid> -->
+
+<audio #audioPlayer autoplay="autoplay" style="width: 100%; border:0px;">
+    <source src="{{audio}} " type="audio/mp3" />
+</audio>                   
+
+<!-- <div class="" style="background:#fff; margin-top:30px;">
+    <div text-center padding style="width: 100%; padding: 0px; margin: 0px; ">
+        <ion-card style="width: 100%; padding: 0px; margin: 0px; ">
+        </ion-card>           
+    </div> 
+</div> -->
+
+<ion-content>
+    
+    <ion-footer>
+        <ion-range [(ngModel)]="position">
+            
+        </ion-range>
+    </ion-footer>

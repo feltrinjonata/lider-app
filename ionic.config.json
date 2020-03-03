@@ -1,0 +1,7 @@
+{
+  "name": "AppLider",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

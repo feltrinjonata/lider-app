@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="transparente pantera" overflow-scroll="true">
+
+  <ion-card class="video-card">
+    <video src="{{ urlVideo }}" autobuffer controls played poster="{{ urlIMG }}" width="100%"></video>
+    <ion-row padding class="action-sheets-basic-page">
+        <ion-col style="color:#8f8f8d"> 
+            <ion-icon name="ios-information-circle-outline" class="mr5"></ion-icon>
+            {{item.Classificacao}}
+        </ion-col>
+        <ion-col style="color:#8f8f8d" text-center >
+            <ion-icon name="ios-calendar-outline" class="mr5"></ion-icon>
+            {{ item.Data}}
+        </ion-col>
+        <ion-col style="color:#8f8f8d" text-right >
+          <ion-icon name="ios-clock-outline" class="mr5"></ion-icon>            
+          {{ item.Tempo}}
+        </ion-col>
+    </ion-row>    
+    <ion-card-content style="margin-top: -20px;">
+      <ion-card-title>
+        <h2 class="video-card-titulo">{{ item.Titulo }}</h2>
+        <p>{{ item.Subtitulo }}</p>
+      </ion-card-title>
+      <div style="color:#bbbbbb; margin-top:-10px;" [innerHTML]="item.Descricao"></div> 
+    </ion-card-content>
+    
+    <ion-card-content>
+      <div class="icone-video-down" (click)="AddMinhaLista(item)">
+        <img src="assets/imgs/{{icone}}.png">
+        <p>Minha Lista</p>
+      </div>
+      <div class="icone-video-down" (click)="ClassificarConcerto(item)">
+        <img src="assets/imgs/ico-curtir-aulas.png">
+        <p>{{ icoCurtir }}</p> 
+      </div> 
+      <div class="icone-video-down" (click)="regularShare('Olá! Gostaria de compartilhar com você o App Líder, um aplicativo de conteúdo de Líderes para Líderes! 
+Acesse o link abaixo e baixe o seu App Lider:
+iOS - http://bit.ly/lider-app-ios
+Android - http://bit.ly/lider-app-android', 'Líder App', imgFinal, '')">
+        <img src="assets/imgs/ico-compartilhar-aulas.png">
+        <p>Compartilhar</p>
+      </div> 
+
+    </ion-card-content>
+    <ion-fab left class="video-resolucao">
+      <button ion-fab class="video-resolucao-btn">
+        <ion-icon name="md-more" class="video-resolucao-btn-icone"></ion-icon>
+      </button>
+      <ion-fab-list side="bottom" class="caixa-resolucao">
+        <button ion-button color="primary" class="botao-resolucao" small (click)="startVideo(data.baixa)" name="data.baixa" value="link_240p">Mobile</button>
+        <button ion-button color="primary" class="botao-resolucao" small  (click)="startVideo(data.media)" name="data.media" value="link_360p">Baixa</button>
+        <button ion-button color="primary" class="botao-resolucao" small (click)="startVideo(data.boa)" name="data.boa" value="link_480p">Média</button>
+        <button ion-button color="primary" class="botao-resolucao" small (click)="startVideo(data.excelente)" name="data.excelente" value="link_720p">Alta</button>
+      </ion-fab-list>
+    </ion-fab>
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start color="secondary" (click)="menu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header_logo" (click)="abrirPaginaHome()">
+      <img src="assets/imgs/logo-small-menu.png">
+    </div>
+    <div class="header_aovivo" (click)="abrirPaginaAovivo()">
+      <img src="assets/imgs/ico-air-play-off.png">
+    </div>
+    <div class="header_users" (click)="abrirPaginaEventos()">
+      <img src="assets/imgs/ico-pessoas-off.png">
+    </div>
+    <div class="header_busca" (click)="abrirPaginaBusca()">
+      <img src="assets/imgs/ico-busca.png">
+    </div>
+  </ion-navbar>
+</ion-header>
+<ion-content class="transparente pantera"> 
+
+  <!--
+  <ion-card class="novidades-card">
+    <ion-card-content>
+      <h2 class="video-card-titulo">
+        {{ item.palavra }}
+        <span class="video-card-tipo">{{ item.tipo }}</span>
+      </h2> 
+      <div class="video-card-desc" [innerHTML]="item.descricao"></div>   
+    </ion-card-content>
+  </ion-card>
+  -->
+  
+  <ion-card *ngIf="item.descricao" class="novidades-card">
+    <ion-card-content>
+      <h2 class="video-card-titulo">
+        {{ item.palavra }}
+        <span class="video-card-tipo">Dicionário de Ontopsicologia</span>
+      </h2> 
+      <div class="video-card-desc" [innerHTML]="item.descricao"></div>   
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="item.descricao2" class="novidades-card">
+    <ion-card-content>
+      <h2 class="video-card-titulo">
+        {{ item.palavra }}
+        <span class="video-card-tipo">Étimo</span>
+      </h2> 
+      <div class="video-card-desc" [innerHTML]="item.descricao2"></div>   
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="item.descricao3" class="novidades-card">
+    <ion-card-content>
+      <h2 class="video-card-titulo">
+        {{ item.palavra }}
+        <span class="video-card-tipo">Conceitos</span>
+      </h2> 
+      <div class="video-card-desc" [innerHTML]="item.descricao3"></div>   
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
