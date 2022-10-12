@@ -40,7 +40,7 @@
     "brmasker-ionic-3": "^1.6.3",
     "card.io.cordova.mobilesdk": "^2.1.0",
     "com.paypal.cordova.mobilesdk": "^3.5.0",
-    "cordova-android": "6.3.0",
+    "cordova-android": "11.0.0",
     "cordova-browser": "6.0.0",
     "cordova-ios": "5.0.0",
     "cordova-plugin-app-version": "^0.1.9",
